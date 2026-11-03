@@ -668,13 +668,13 @@ if (!reduced && !isMobile && window.THREE) { try { initSphere(sphereEl); } catch
 document.getElementById('cover').addEventListener('click', () => { const v = document.getElementById('player'); document.getElementById('vcard').classList.add('playing'); v.src = v.dataset.src; v.muted = false; v.play().catch(() => {}); });
 document.getElementById('player').addEventListener('ended', () => { document.getElementById('vcard').classList.remove('playing'); });
 // ---- Leads: a dónde van los datos ----------------------------------------------------
-// Opción recomendada: Google Form → las respuestas quedan en una Google Sheet (tu "base de datos") y Google te avisa por email.
-// 1) Pegá en LEADS.url la URL del formulario terminada en /formResponse
-// 2) Pegá en LEADS.map los IDs de cada campo (entry.1234567890) que salen del "link prellenado" del formulario.
-// También acepta un endpoint propio (Apps Script /exec o cualquier API) que reciba JSON por POST.
+// Los datos van por POST (JSON) a LEADS.url: hoy es el Apps Script "SOLYN Leads" que guarda cada lead en la planilla
+// "SOLYN — Leads" (Google Drive de Juan) y manda un email a info.solyn@gmail.com. El código del script está en leads-apps-script.gs.
+// También acepta un Google Form (URL terminada en /formResponse + IDs entry.xxx en LEADS.map) o cualquier API que reciba JSON.
 const LEADS = {
-  url: '',
-  map: { nombre: '', apellido: '', email: '', telefono: '', source: '', lang: '', page: '' },
+  // Apps Script "SOLYN Leads" (cuenta de Juan) → planilla "SOLYN — Leads" + email a info.solyn@gmail.com por cada lead
+  url: 'https://script.google.com/macros/s/AKfycbwWSt7RCO0mLikXe8Z3T0hmL1CzS04pNWUuoxtni_1NTiw7snRQ3_yYeybIpItYL3noBw/exec',
+  map: { nombre: '', apellido: '', email: '', telefono: '', source: '', lang: '', page: '' }, // solo se usa si url es un Google Form (/formResponse)
 };
 const LS = { get: k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
 async function sendLead(data) {
