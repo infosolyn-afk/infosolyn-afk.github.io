@@ -125,6 +125,7 @@ section { padding: 150px 0; border-bottom: 1px solid var(--line-soft); }
 .avatars { display: flex; justify-content: center; margin-top: 8px; }
 .avatars .av { width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--accent); background: #2a2420; margin-left: -10px; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; color: rgba(245,241,234,0.8); box-shadow: 0 0 0 2px #1a1612; }
 .avatars .av:first-child { margin-left: 0; }
+.avatars img.av { object-fit: cover; }
 .vcard .words { font-family: var(--body); font-weight: 500; font-size: 15px; color: var(--cream); }
 .vcard .words i { font-style: normal; color: var(--accent); }
 .vcard video { position: absolute; inset: 0; width: 100%; height: 100%; display: none; background: #000; }
@@ -148,6 +149,7 @@ section { padding: 150px 0; border-bottom: 1px solid var(--line-soft); }
 .person { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 28px; }
 .person .av { width: 52px; height: 52px; border-radius: 50%; background: var(--ink); color: var(--cream); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 14px; flex-shrink: 0; }
 .dark .person .av { background: var(--cream); color: var(--ink); }
+.person img.av { object-fit: cover; display: block; background: var(--surface-2); }
 .person .who { text-align: left; }
 .person .name { font-family: var(--body); font-weight: 600; font-size: 15px; }
 .person .role { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; color: var(--muted); }
@@ -331,7 +333,7 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
           <img src="assets/solyn-logo-light.png" alt="SOLYN">
           <h3 data-i="video_h"></h3>
           <button class="play" aria-label="Play"></button>
-          <div class="avatars placeholder" data-ph="placeholder: fotos de clientes"><div class="av">JP</div><div class="av">MR</div><div class="av">CL</div><div class="av">DF</div><div class="av">SA</div><div class="av">LR</div><div class="av">AG</div></div>
+          <div class="avatars"><img class="av" src="assets/testimonios/pedro-sabatte.jpg" alt="Pedro Sabatte"><img class="av" src="assets/testimonios/facundo-rovere.jpg" alt="Facundo Rovere"><img class="av" src="assets/testimonios/cristobal-pardi.jpg" alt="Cristóbal Pardi"></div>
           <div class="words" data-i="video_words"></div>
         </div>
         <video id="player" playsinline preload="none" controls></video>
@@ -350,13 +352,13 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
   <section class="testi">
     <div class="container">
       <span class="label" data-i="testi_label"></span>
-      <div class="featured rv placeholder" data-ph="placeholder: testimonio real">
+      <div class="featured rv">
         <blockquote data-i="t1_q"></blockquote>
-        <div class="person"><div class="av">LA</div><div class="who"><div class="name" data-i="t1_n"></div><div class="role" data-i="t1_r"></div></div></div>
+        <div class="person"><img class="av" src="assets/testimonios/pedro-sabatte.jpg" alt="Pedro Sabatte" width="52" height="52"><div class="who"><div class="name" data-i="t1_n"></div><div class="role" data-i="t1_r"></div></div></div>
       </div>
       <div class="tgrid">
-        <div class="card tcard tilt rv d1 placeholder" data-ph="placeholder"><div class="bar"></div><p data-i="t2_q"></p><div class="person"><div class="av">MK</div><div class="who"><div class="name" data-i="t2_n"></div><div class="role" data-i="t2_r"></div></div></div></div>
-        <div class="card tcard tilt rv d2 placeholder" data-ph="placeholder"><div class="bar"></div><p data-i="t3_q"></p><div class="person"><div class="av">KP</div><div class="who"><div class="name" data-i="t3_n"></div><div class="role" data-i="t3_r"></div></div></div></div>
+        <div class="card tcard tilt rv d1"><div class="bar"></div><p data-i="t2_q"></p><div class="person"><img class="av" src="assets/testimonios/facundo-rovere.jpg" alt="Facundo Rovere" width="52" height="52"><div class="who"><div class="name" data-i="t2_n"></div><div class="role" data-i="t2_r"></div></div></div></div>
+        <div class="card tcard tilt rv d2"><div class="bar"></div><p data-i="t3_q"></p><div class="person"><img class="av" src="assets/testimonios/cristobal-pardi.jpg" alt="Cristóbal Pardi" width="52" height="52"><div class="who"><div class="name" data-i="t3_n"></div><div class="role" data-i="t3_r"></div></div></div></div>
       </div>
     </div>
   </section>
@@ -385,7 +387,8 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
     </div>
   </section>
 
-  <section class="testi surface">
+  <!-- Segunda tanda de testimonios: oculta hasta tener más testimonios reales (quitar "hidden") -->
+  <section class="testi surface" hidden>
     <div class="container">
       <span class="label" data-i="more_label"></span>
       <h2 class="big" style="margin-top:28px" data-i="more_h"></h2>
@@ -497,12 +500,12 @@ const I18N = {
     proof_1: '<b>2.700+</b> reuniones agendadas para clientes', proof_2: '<b>25+</b> clientes', proof_3: 'Revisión humana cada día hábil',
     marquee: ['Cold email', 'Respuestas positivas', 'Reuniones agendadas', 'Revisión humana diaria', 'Dominios protegidos', 'Copy personalizado', 'Semana tras semana'],
     video_label: 'Mirá: cómo SOLYN agenda reuniones (1:00)', video_h: 'Cómo agendamos reuniones <em style="font-style:normal;color:#F26B1F">para vos</em>',
-    video_words: 'En palabras de nuestros clientes · <i>[Empresa], [Empresa], [Empresa]</i> y más', video_or: 'o agendá directo:', or_mail: 'o escribinos:',
+    video_words: 'En palabras de nuestros clientes', video_or: 'o agendá directo:', or_mail: 'o escribinos:',
     logos_h: 'Clientes que conseguimos para nuestros clientes', logos: ['Marca 01', 'Marca 02', 'Marca 03', 'Marca 04', 'Marca 05', 'Marca 06', 'Marca 07', 'Marca 08'],
     testi_label: 'Lo que dicen nuestros clientes',
-    t1_q: '“Testimonio destacado del cliente: una frase corta y concreta sobre el resultado y la relación de trabajo con SOLYN.”', t1_n: 'Nombre Apellido', t1_r: 'Cargo, Empresa',
-    t2_q: '“Testimonio con un resultado medible: <b>el primer mes tuve [X] reuniones nuevas</b>. El equipo revisa la campaña varias veces por mes y no se pierde ninguna oportunidad.”', t2_n: 'Nombre Apellido', t2_r: 'Cargo, Empresa',
-    t3_q: '“Testimonio sobre la relación: <b>cada semana ganamos algo estratégico</b> trabajando con el equipo de SOLYN.”', t3_n: 'Nombre Apellido', t3_r: 'Cargo, Empresa',
+    t1_q: '“Veníamos con malas experiencias, probando agencias que prometían reuniones y entregaban planillas de contactos. Con SOLYN la diferencia se nota a las pocas semanas: las respuestas son de gente que realmente quiere hablar, y <b>cada reunión que entra al calendario ya viene calificada</b>. Hoy es nuestro canal principal para abrir cuentas nuevas.”', t1_n: 'Pedro Sabatte', t1_r: 'Cliente de SOLYN',
+    t2_q: '“Lo que me convenció fue la transparencia. Veo siempre qué se envía, a quién y qué contesta cada uno. Y <b>siempre hay alguien del equipo revisando la campaña todos los días</b> y respondiendo mis consultas, no un sistema que manda emails solo. Las reuniones llegan semana tras semana sin que tengamos que ocuparnos de nada.”', t2_n: 'Facundo Rovere', t2_r: 'Cliente de SOLYN',
+    t3_q: '“Mi miedo era quemar el dominio de la empresa, pero gracias a los chicos eso nunca fue un problema: trabajan con casillas propias, calentadas y protegidas, y el volumen lo manejan ellos. El resultado son <b>conversaciones con decisores a los que nunca habíamos logrado llegar</b> por LinkedIn ni por llamadas.”', t3_n: 'Cristóbal Pardi', t3_r: 'Cliente de SOLYN',
     why_label: 'Por qué SOLYN', why_h: 'Por qué los equipos <span class="muted">eligen SOLYN.</span>',
     why_1_t: 'Una persona en tu campaña cada día hábil', why_1_d: 'Un humano real revisa y ajusta tu campaña cada día hábil.',
     why_2_t: 'Lo aprendido con cada cliente, en la tuya', why_2_d: 'Enviamos emails para muchos clientes a la vez y probamos herramientas todo el tiempo. Cada mes, lo que mejor funciona entra automáticamente en tus campañas.',
@@ -548,12 +551,12 @@ const I18N = {
     proof_1: '<b>2,700+</b> meetings booked for clients', proof_2: '<b>25+</b> customers', proof_3: 'Human review every business day',
     marquee: ['Cold email', 'Positive replies', 'Meetings booked', 'Daily human review', 'Protected domains', 'Personalized copy', 'Week after week'],
     video_label: 'Watch: how SOLYN books meetings (1:00)', video_h: 'How we book meetings <em style="font-style:normal;color:#F26B1F">for you</em>',
-    video_words: 'In our clients\' words · <i>[Company], [Company], [Company]</i> and more', video_or: 'or book directly:', or_mail: 'or email us:',
+    video_words: 'In our clients\' words', video_or: 'or book directly:', or_mail: 'or email us:',
     logos_h: 'Customers we\'ve landed for our clients', logos: ['Brand 01', 'Brand 02', 'Brand 03', 'Brand 04', 'Brand 05', 'Brand 06', 'Brand 07', 'Brand 08'],
     testi_label: 'What our clients say',
-    t1_q: '“Featured client testimonial: one short, concrete sentence about the result and the working relationship with SOLYN.”', t1_n: 'First Last', t1_r: 'Role, Company',
-    t2_q: '“Testimonial with a measurable result: <b>the very first month I met with [X] new opportunities</b>. The team checks in several times a month so nothing slips.”', t2_n: 'First Last', t2_r: 'Role, Company',
-    t3_q: '“Testimonial about the relationship: <b>every week we gain something strategic</b> working with the SOLYN team.”', t3_n: 'First Last', t3_r: 'Role, Company',
+    t1_q: '“We came in with bad experiences, having tried agencies that promised meetings and delivered contact spreadsheets. With SOLYN the difference shows within a few weeks: the replies come from people who actually want to talk, and <b>every meeting that lands on the calendar is already qualified</b>. Today it\'s our main channel for opening new accounts.”', t1_n: 'Pedro Sabatte', t1_r: 'SOLYN client',
+    t2_q: '“What convinced me was the transparency. I always see what gets sent, to whom, and what each person replies. And <b>there\'s always someone from the team reviewing the campaign every day</b> and answering my questions, not a system that sends emails on its own. The meetings come in week after week without us having to do anything.”', t2_n: 'Facundo Rovere', t2_r: 'SOLYN client',
+    t3_q: '“My fear was burning the company\'s domain, but with the team that was never a problem: they work with their own inboxes, warmed up and protected, and they handle the volume. The result is <b>conversations with decision-makers we had never managed to reach</b> through LinkedIn or calls.”', t3_n: 'Cristóbal Pardi', t3_r: 'SOLYN client',
     why_label: 'Why SOLYN', why_h: 'Why teams <span class="muted">choose SOLYN.</span>',
     why_1_t: 'A person on your campaign every business day', why_1_d: 'A real human reviews and adjusts your campaign each business day.',
     why_2_t: 'Every client\'s lessons, in yours', why_2_d: 'We send email for many clients at once and test tools constantly. Each month, what works best goes into your campaigns automatically.',
