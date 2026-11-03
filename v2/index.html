@@ -234,6 +234,45 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
   .audit .close { padding: 32px 24px; }
 }
 @media (max-width: 600px) { .proof { grid-template-columns: 1fr 1fr; } }
+
+/* lead magnet (popup + botón flotante) */
+.lm { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 350ms cubic-bezier(.16,1,.3,1); }
+.lm.on { opacity: 1; pointer-events: auto; }
+.lm-back { position: absolute; inset: 0; background: rgba(26,23,21,0.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.lm-card { position: relative; width: 100%; max-width: 560px; max-height: calc(100vh - 40px); overflow: auto; background: var(--dark); color: var(--cream); border-radius: 18px; border-top: 5px solid var(--accent); padding: 34px 38px 30px; box-shadow: 0 50px 120px rgba(0,0,0,0.5); transform: translateY(24px) scale(0.98); transition: transform 500ms cubic-bezier(.16,1,.3,1); }
+.lm.on .lm-card { transform: none; }
+.lm-x { position: absolute; top: 16px; right: 16px; width: 38px; height: 38px; border-radius: 50%; border: 0; background: rgba(245,241,234,0.08); color: var(--cream); font-size: 22px; line-height: 1; cursor: pointer; transition: background 180ms; }
+.lm-x:hover { background: rgba(245,241,234,0.16); }
+.lm-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.lm-ico { width: 60px; height: 60px; border-radius: 50%; border: 1.5px solid var(--accent); background: rgba(242,107,31,0.12); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; }
+.lm-ico svg { width: 26px; height: 26px; }
+.lm-pill { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--ink); font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; padding: 10px 16px; border-radius: 999px; font-weight: 500; }
+.lm-card h3 { font-family: var(--display); font-size: clamp(34px, 5vw, 46px); line-height: 0.95; letter-spacing: 0.5px; text-transform: uppercase; color: var(--cream); margin: 0 0 10px; }
+.lm-card h3 em { font-style: normal; color: var(--accent); }
+.lm-sub { font-family: var(--mono); font-size: 12px; letter-spacing: 1px; color: rgba(245,241,234,0.6); margin: 0 0 22px; }
+.lm-form .r2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.lm-form label { display: block; font-family: var(--body); font-weight: 600; font-size: 13px; margin-bottom: 14px; color: var(--cream); }
+.lm-form label i { color: var(--accent); font-style: normal; }
+.lm-form input { display: block; width: 100%; margin-top: 6px; height: 48px; border-radius: 6px; border: 1px solid rgba(245,241,234,0.16); background: rgba(245,241,234,0.05); color: var(--cream); padding: 0 14px; font: inherit; font-weight: 400; font-size: 15px; transition: border-color 180ms, background 180ms; }
+.lm-form input::placeholder { color: rgba(245,241,234,0.35); }
+.lm-form input:focus { outline: 0; border-color: var(--accent); background: rgba(242,107,31,0.06); }
+.lm-form input.err { border-color: #E5484D; }
+.lm-btn { width: 100%; height: 56px; border: 0; border-radius: 6px; background: var(--accent); color: var(--ink); font-family: var(--body); font-weight: 600; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 10px; transition: background 200ms, transform 300ms cubic-bezier(.16,1,.3,1); margin-top: 4px; }
+.lm-btn:hover { background: var(--hot); }
+.lm-btn:disabled { opacity: 0.7; cursor: wait; }
+.lm-foot { text-align: center; font-family: var(--body); font-weight: 300; font-size: 12.5px; color: rgba(245,241,234,0.55); margin: 16px 0 0; }
+.lm-done { text-align: center; padding: 10px 0 4px; }
+.lm-done .ok { width: 68px; height: 68px; border-radius: 50%; background: var(--accent); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; font-size: 30px; margin-bottom: 18px; }
+.lm-done h3 { margin-bottom: 8px; }
+.lm-done p { font-weight: 300; font-size: 15px; color: rgba(245,241,234,0.75); margin: 0 0 22px; line-height: 1.6; }
+.lm-done .lm-btn { text-decoration: none; }
+.lm-done .cal { display: inline-block; margin-top: 16px; font-family: var(--mono); font-size: 12px; color: var(--cream); border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+.lm-fab { position: fixed; left: 20px; bottom: 20px; z-index: 250; display: inline-flex; align-items: center; gap: 10px; background: var(--dark); color: var(--cream); border: 1px solid rgba(245,241,234,0.14); border-radius: 999px; padding: 12px 18px 12px 14px; font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; box-shadow: 0 16px 40px rgba(26,23,21,0.25); transform: translateY(80px); opacity: 0; transition: transform 500ms cubic-bezier(.16,1,.3,1), opacity 400ms; }
+.lm-fab.on { transform: none; opacity: 1; }
+.lm-fab i { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); display: inline-flex; align-items: center; justify-content: center; color: var(--ink); font-style: normal; }
+.lm-fab i svg { width: 14px; height: 14px; }
+.news .ok { font-family: var(--mono); font-size: 12px; color: var(--accent); margin: 10px 0 0; letter-spacing: 1px; }
+@media (max-width: 600px) { .lm-card { padding: 26px 22px 22px; } .lm-form .r2 { grid-template-columns: 1fr; gap: 0; } .lm-head { flex-wrap: wrap; } .lm-fab { left: 12px; bottom: 12px; padding: 10px 14px 10px 10px; font-size: 10px; } }
 </style>
 </head>
 <body>
@@ -396,6 +435,37 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
   </div>
 </footer>
 
+<!-- Lead magnet: popup de descarga del Playbook -->
+<div class="lm" id="lm" aria-hidden="true">
+  <div class="lm-back" id="lmback"></div>
+  <div class="lm-card" role="dialog" aria-modal="true" aria-labelledby="lmtitle">
+    <button class="lm-x" id="lmx" aria-label="Cerrar">×</button>
+    <div id="lmmain">
+      <div class="lm-head"><span class="lm-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span><span class="lm-pill">🔥 <span data-i="lm_pill"></span></span></div>
+      <h3 id="lmtitle" data-i="lm_title"></h3>
+      <p class="lm-sub" data-i="lm_sub"></p>
+      <form class="lm-form" id="lmform" novalidate>
+        <div class="r2">
+          <label><span data-i="lm_f1"></span> <i>*</i><input name="nombre" autocomplete="given-name" data-ph-i="lm_p1"></label>
+          <label><span data-i="lm_f2"></span> <i>*</i><input name="apellido" autocomplete="family-name" data-ph-i="lm_p2"></label>
+        </div>
+        <label><span data-i="lm_f3"></span> <i>*</i><input name="email" type="email" autocomplete="email" inputmode="email" data-ph-i="lm_p3"></label>
+        <label><span data-i="lm_f4"></span> <i>*</i><input name="telefono" type="tel" autocomplete="tel" inputmode="tel" data-ph-i="lm_p4"></label>
+        <button type="submit" class="lm-btn" id="lmsubmit"><span data-i="lm_btn"></span> →</button>
+        <p class="lm-foot" data-i="lm_foot"></p>
+      </form>
+    </div>
+    <div class="lm-done" id="lmdone" hidden>
+      <div class="ok">✓</div>
+      <h3 data-i="lm_done_t"></h3>
+      <p data-i="lm_done_d"></p>
+      <a class="lm-btn" id="lmdl" href="#" download><span data-i="lm_done_btn"></span> ↓</a>
+      <a class="cal" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener" data-i="lm_done_cal"></a>
+    </div>
+  </div>
+</div>
+<button class="lm-fab" id="lmfab" type="button"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg></i><span data-i="lm_fab"></span></button>
+
 <script src="vendor/three.min.js"></script>
 <script src="vendor/gsap.min.js"></script>
 <script src="vendor/ScrollTrigger.min.js"></script>
@@ -404,6 +474,7 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
 <script src="sphere.js"></script>
 <script>
 const CAL = 'https://calendly.com/info-solyn/30min';
+const PDF = { es: 'assets/SOLYN-Cold-Email-Playbook-2026-ES.pdf', en: 'assets/SOLYN-Cold-Email-Playbook-2026-EN.pdf' };
 const I18N = {
   es: {
     nav_1: 'Soluciones', nav_2: 'Cómo funciona', nav_3: 'Clientes', nav_4: 'Auditoría', nav_cta: 'Agendar demo',
@@ -448,6 +519,12 @@ const I18N = {
     footer_desc: 'Cold email hecho por nosotros. Respuestas positivas de los compradores exactos que querés, y reuniones en tu calendario semana tras semana.',
     f_quick: 'Navegar', f_q1: 'Soluciones', f_q1b: 'Cómo funciona', f_q2: 'Auditoría de proveedor', f_q3: 'Trabajá con nosotros',
     f_start: 'Empezá', f_s1: 'Agendar demo', f_s2: 'Mirá el video', f_s3: 'Escribinos',
+    lm_pill: 'Descarga gratis', lm_title: 'El Playbook de <em>Cold Email</em> 2026 para PyMEs', lm_sub: '25 páginas de estrategias, templates y benchmarks',
+    lm_f1: 'Nombre', lm_f2: 'Apellido', lm_f3: 'Email', lm_f4: 'Teléfono', lm_p1: 'Juan', lm_p2: 'Pérez', lm_p3: 'juan@tuempresa.com', lm_p4: '+54 11 1234 5678',
+    lm_btn: 'Descargar el Playbook', lm_sending: 'Enviando…', lm_foot: 'Sin spam. Solo te escribimos si nos pedís una demo.',
+    lm_done_t: '¡Listo! Tu playbook <em>se está descargando.</em>', lm_done_d: 'Si no empezó la descarga, tocá el botón. Y si querés que lo hagamos por vos, agendá una demo de 30 minutos.',
+    lm_done_btn: 'Descargar de nuevo', lm_done_cal: 'Agendar una demo →', lm_fab: 'Playbook gratis', lm_err: 'Completá este campo', lm_err_mail: 'Revisá el email',
+    news_ok: '¡Listo! Te sumamos al newsletter.',
     copy: '© 2026 SOLYN — Todos los derechos reservados',
   },
   en: {
@@ -493,6 +570,12 @@ const I18N = {
     footer_desc: 'Done-for-you cold email. Positive replies from the exact buyers you want, and meetings on your calendar week after week.',
     f_quick: 'Navigate', f_q1: 'Solutions', f_q1b: 'How it works', f_q2: 'Vendor audit', f_q3: 'Work with us',
     f_start: 'Get started', f_s1: 'Book demo', f_s2: 'Watch the video', f_s3: 'Email us',
+    lm_pill: 'Free instant download', lm_title: 'The 2026 <em>Cold Email</em> Playbook for Small Business', lm_sub: '25 pages of strategies, templates & benchmarks',
+    lm_f1: 'First name', lm_f2: 'Last name', lm_f3: 'Email', lm_f4: 'Phone', lm_p1: 'John', lm_p2: 'Doe', lm_p3: 'john@company.com', lm_p4: '+1 (555) 123-4567',
+    lm_btn: 'Download the Playbook', lm_sending: 'Sending…', lm_foot: 'No spam. We only write if you ask for a demo.',
+    lm_done_t: 'Done! Your playbook <em>is downloading.</em>', lm_done_d: 'If the download didn\'t start, tap the button. And if you\'d rather have us do it for you, book a 30-minute demo.',
+    lm_done_btn: 'Download again', lm_done_cal: 'Book a demo →', lm_fab: 'Free playbook', lm_err: 'Please fill this in', lm_err_mail: 'Check the email',
+    news_ok: 'Done! You\'re on the newsletter.',
     copy: '© 2026 SOLYN — All rights reserved',
   },
 };
@@ -516,6 +599,7 @@ function apply() {
   document.getElementById('acc').innerHTML = d.audit.map((it, i) => `<div class="it${i === 0 ? ' open' : ''}"><button aria-expanded="${i === 0}"><span class="n">0${i + 1}</span><span class="q">${it[0]}</span><span class="chev">+</span></button><div class="a"><p>${it[1]}</p></div></div>`).join('');
   document.querySelectorAll('#acc button').forEach(b => b.addEventListener('click', () => { const it = b.parentElement; const open = it.classList.contains('open'); document.querySelectorAll('#acc .it').forEach(x => { x.classList.remove('open'); x.querySelector('button').setAttribute('aria-expanded', 'false'); }); if (!open) { it.classList.add('open'); b.setAttribute('aria-expanded', 'true'); } }));
   document.title = lang === 'es' ? 'SOLYN | Convertimos el email en ingresos' : 'SOLYN | We turn email into revenue';
+  const dl = document.getElementById('lmdl'); dl.href = PDF[lang]; dl.setAttribute('download', PDF[lang].split('/').pop());
   const v = document.getElementById('player'); const vc = document.getElementById('vcard');
   vc.classList.remove('playing'); v.pause(); v.removeAttribute('src'); v.load(); v.dataset.src = `video/solyn-${lang}.mp4`; v.poster = `video/solyn-${lang}-poster.jpg`;
   // hero headline: split + reveal (como el sitio original)
@@ -583,8 +667,71 @@ if (!reduced && !isMobile && window.THREE) { try { initSphere(sphereEl); } catch
 // video
 document.getElementById('cover').addEventListener('click', () => { const v = document.getElementById('player'); document.getElementById('vcard').classList.add('playing'); v.src = v.dataset.src; v.muted = false; v.play().catch(() => {}); });
 document.getElementById('player').addEventListener('ended', () => { document.getElementById('vcard').classList.remove('playing'); });
-// newsletter (sin backend por ahora: abre el correo con el email cargado)
-document.getElementById('newsform').addEventListener('submit', e => { e.preventDefault(); const m = document.getElementById('newsmail').value; location.href = `mailto:info.solyn@gmail.com?subject=${encodeURIComponent('Newsletter SOLYN')}&body=${encodeURIComponent((lang === 'es' ? 'Quiero suscribirme al newsletter: ' : 'Please subscribe me to the newsletter: ') + m)}`; });
+// ---- Leads: a dónde van los datos ----------------------------------------------------
+// Opción recomendada: Google Form → las respuestas quedan en una Google Sheet (tu "base de datos") y Google te avisa por email.
+// 1) Pegá en LEADS.url la URL del formulario terminada en /formResponse
+// 2) Pegá en LEADS.map los IDs de cada campo (entry.1234567890) que salen del "link prellenado" del formulario.
+// También acepta un endpoint propio (Apps Script /exec o cualquier API) que reciba JSON por POST.
+const LEADS = {
+  url: '',
+  map: { nombre: '', apellido: '', email: '', telefono: '', source: '', lang: '', page: '' },
+};
+const LS = { get: k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+async function sendLead(data) {
+  data = Object.assign({ lang, page: location.href, ts: new Date().toISOString() }, data);
+  if (!LEADS.url) { const q = LS.get('solyn_leads_q') || []; q.push(data); LS.set('solyn_leads_q', q.slice(-20)); return false; }
+  try {
+    if (/formResponse/.test(LEADS.url)) {
+      const body = new URLSearchParams();
+      Object.keys(LEADS.map).forEach(k => { if (LEADS.map[k] && data[k] != null) body.append(LEADS.map[k], String(data[k])); });
+      await fetch(LEADS.url, { method: 'POST', mode: 'no-cors', body });
+      return true;
+    }
+    const r = await fetch(LEADS.url, { method: 'POST', body: JSON.stringify(data) });
+    return r.ok;
+  } catch (e) {
+    try { await fetch(LEADS.url, { method: 'POST', mode: 'no-cors', body: JSON.stringify(data) }); return true; } catch (_) { return false; }
+  }
+}
+// reintento de leads que quedaron en cola (si el endpoint no estaba configurado o no había conexión)
+(async () => { if (!LEADS.url) return; const q = LS.get('solyn_leads_q') || []; if (!q.length) return; LS.set('solyn_leads_q', []); for (const d of q) await sendLead(d); })();
+
+// ---- Popup del Playbook --------------------------------------------------------------
+const lm = document.getElementById('lm'), lmfab = document.getElementById('lmfab'), lmform = document.getElementById('lmform');
+let lmShown = false;
+function lmOpen() { lm.classList.add('on'); lm.setAttribute('aria-hidden', 'false'); lmShown = true; lmfab.classList.remove('on'); if (lenis) lenis.stop(); document.body.style.overflow = 'hidden'; setTimeout(() => { const f = lmform.querySelector('input'); if (f && window.innerWidth > 900) f.focus(); }, 400); }
+function lmClose() { lm.classList.remove('on'); lm.setAttribute('aria-hidden', 'true'); if (lenis) lenis.start(); document.body.style.overflow = ''; const st = LS.get('solyn_pb') || {}; if (!st.done) LS.set('solyn_pb', { closed: Date.now() }); setTimeout(() => lmfab.classList.add('on'), 600); }
+document.getElementById('lmx').addEventListener('click', lmClose);
+document.getElementById('lmback').addEventListener('click', lmClose);
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && lm.classList.contains('on')) lmClose(); });
+lmfab.addEventListener('click', lmOpen);
+(function autoShow() {
+  const st = LS.get('solyn_pb') || {};
+  if (new URLSearchParams(location.search).has('playbook')) { setTimeout(lmOpen, 600); return; }
+  if (st.done || (st.closed && Date.now() - st.closed < 3 * 864e5)) { setTimeout(() => lmfab.classList.add('on'), 1500); return; }
+  let fired = false; const fire = () => { if (fired || lmShown) return; fired = true; if (document.getElementById('vcard').classList.contains('playing')) { setTimeout(() => lmfab.classList.add('on'), 500); return; } lmOpen(); };
+  const t = setTimeout(fire, 9000);
+  const onScroll = () => { if (window.scrollY > window.innerHeight * 0.35) { clearTimeout(t); window.removeEventListener('scroll', onScroll); setTimeout(fire, 400); } };
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+function triggerDownload() { const a = document.getElementById('lmdl'); const tmp = document.createElement('a'); tmp.href = a.href; tmp.download = a.getAttribute('download'); document.body.appendChild(tmp); tmp.click(); tmp.remove(); }
+lmform.addEventListener('submit', async e => {
+  e.preventDefault(); const d = I18N[lang]; let ok = true; const data = {};
+  lmform.querySelectorAll('input').forEach(i => { i.classList.remove('err'); i.removeAttribute('title'); const v = i.value.trim(); data[i.name] = v; let bad = !v; if (i.name === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) bad = true; if (i.name === 'telefono' && v && v.replace(/\D/g, '').length < 6) bad = true; if (bad) { ok = false; i.classList.add('err'); i.title = i.name === 'email' ? d.lm_err_mail : d.lm_err; } });
+  if (!ok) { lmform.querySelector('.err').focus(); return; }
+  const btn = document.getElementById('lmsubmit'); btn.disabled = true; btn.firstElementChild.textContent = d.lm_sending;
+  await Promise.race([sendLead(Object.assign({ source: 'playbook' }, data)), new Promise(r => setTimeout(r, 3500))]);
+  LS.set('solyn_pb', { done: Date.now(), email: data.email });
+  document.getElementById('lmmain').hidden = true; document.getElementById('lmdone').hidden = false;
+  triggerDownload();
+  btn.disabled = false; btn.firstElementChild.textContent = d.lm_btn;
+});
+// newsletter → misma base de datos (source: newsletter)
+document.getElementById('newsform').addEventListener('submit', async e => {
+  e.preventDefault(); const f = e.target; const m = document.getElementById('newsmail').value.trim(); if (!m) return; const b = f.querySelector('button'); b.disabled = true;
+  await Promise.race([sendLead({ email: m, source: 'newsletter' }), new Promise(r => setTimeout(r, 3500))]);
+  b.disabled = false; f.reset(); let ok = f.parentElement.querySelector('.ok'); if (!ok) { ok = document.createElement('p'); ok.className = 'ok'; f.parentElement.appendChild(ok); } ok.textContent = I18N[lang].news_ok;
+});
 </script>
 </body>
 </html>
