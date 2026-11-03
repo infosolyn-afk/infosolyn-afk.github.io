@@ -178,11 +178,18 @@ var SolynLangContext = React.createContext({
 function SolynLangProvider(_ref) {
   var children = _ref.children;
   var _React$useState = React.useState(function () {
+      // 1) preferencia guardada por el visitante; 2) idioma del navegador (es-AR, es-ES, ...); 3) inglés
       try {
-        return localStorage.getItem('solyn_lang') || 'en';
-      } catch (_unused) {
-        return 'en';
-      }
+        var saved = localStorage.getItem('solyn_lang');
+        if (saved === 'en' || saved === 'es') return saved;
+      } catch (_unused) {}
+      try {
+        var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+        if (langs.some(function (l) {
+          return String(l).toLowerCase().startsWith('es');
+        })) return 'es';
+      } catch (_unused2) {}
+      return 'en';
     }),
     _React$useState2 = _slicedToArray(_React$useState, 2),
     lang = _React$useState2[0],
@@ -191,7 +198,7 @@ function SolynLangProvider(_ref) {
     setLangState(next);
     try {
       localStorage.setItem('solyn_lang', next);
-    } catch (_unused2) {}
+    } catch (_unused3) {}
     document.documentElement.lang = next;
   }, []);
   React.useEffect(function () {

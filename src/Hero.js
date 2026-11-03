@@ -272,6 +272,7 @@ function Hero() {
   }, /*#__PURE__*/React.createElement("span", {
     style: s.prefix
   }), t('hero_tag')), /*#__PURE__*/React.createElement("h1", {
+    key: lang,
     ref: headRef,
     style: s.headline
   }, /*#__PURE__*/React.createElement("span", null, t('hero_head_1')), /*#__PURE__*/React.createElement("span", {

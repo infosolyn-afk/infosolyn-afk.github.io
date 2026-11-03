@@ -4,7 +4,8 @@
 
 function CTA() {
   var _useSolynLang = useSolynLang(),
-    t = _useSolynLang.t;
+    t = _useSolynLang.t,
+    lang = _useSolynLang.lang;
   var headRef = React.useRef(null);
   React.useEffect(function () {
     if (!window.gsap || !window.SplitType || SOLYN_MOTION.reduced) return;
@@ -146,6 +147,7 @@ function CTA() {
   }, t('cta_label')), /*#__PURE__*/React.createElement("div", {
     style: s.line
   })), /*#__PURE__*/React.createElement("h2", {
+    key: lang,
     ref: headRef,
     style: s.head
   }, t('cta_head_1'), " ", /*#__PURE__*/React.createElement("span", {
