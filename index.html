@@ -1,339 +1,751 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SOLYN — Designed for Growth. Built on Systems.</title>
-<meta name="description" content="B2B client acquisition. Results-based. You pay nothing until we deliver qualified meetings on your calendar.">
+<title>SOLYN | Convertimos el email en ingresos</title>
+<meta name="description" content="Cold email hecho por nosotros. Respuestas positivas de los compradores exactos que querés, y reuniones en tu calendario semana tras semana.">
 <meta name="theme-color" content="#F5F1EA">
-<meta property="og:title" content="SOLYN — Designed for Growth. Built on Systems.">
-<meta property="og:description" content="B2B client acquisition. Results-based. You pay nothing until we deliver qualified meetings on your calendar.">
+<meta property="og:title" content="SOLYN | Convertimos el email en ingresos">
+<meta property="og:description" content="Cold email hecho por nosotros. Respuestas positivas y reuniones en tu calendario, semana tras semana.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://infosolyn-afk.github.io/">
+<link rel="canonical" href="https://infosolyn-afk.github.io/">
+<meta property="og:image" content="video/solyn-es-poster.jpg">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<style>/* latin-ext */
-@font-face {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/bebas-neue-400-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/bebas-neue-400-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("fonts/dm-mono-300-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("fonts/dm-mono-300-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/dm-mono-400-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/dm-mono-400-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/dm-mono-500-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/dm-mono-500-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style>
-<style>/* SOLYN — Light mode tokens. Anaranjado SOLYN como acento, dark inversa para Guarantee. */
-:root {
-  --bg-primary: #F5F1EA;        /* cream base — saca lo naranja del logo */
-  --surface-1: #ECE6DB;
-  --surface-2: #E2DACB;
-  --border: #1A1715;
-  --border-soft: rgba(26,23,21,0.12);
-
-  --text-primary: #1A1715;
-  --text-secondary: #5C544C;
-  --text-muted: #8C8278;
-
-  --accent: #F26B1F;            /* naranja SOLYN principal */
-  --accent-hot: #FF8A1F;        /* highlight más cálido */
-  --accent-deep: #C44A0F;       /* sombra del sol */
-
-  /* Inverso para sección Guarantee */
-  --bg-inverse: #1A1715;
-  --text-inverse: #F5F1EA;
-
-  --font-display: 'Bebas Neue', Impact, sans-serif;
-  --font-body: 'Syne', 'Helvetica Neue', sans-serif;
-  --font-mono: 'DM Mono', 'Courier New', monospace;
-}
-</style>
 <style>
-* { box-sizing: border-box; }
-html, body {
-  margin: 0;
-  background: var(--bg-primary); color: var(--text-primary);
-  font-family: var(--font-body); font-weight: 300; font-size: 17px; line-height: 1.8;
-  -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+/* Tipografías SOLYN autoalojadas */
+@font-face { font-family: 'Bebas Neue'; font-weight: 400; font-display: swap; src: url("fonts/bebas-neue-400-latin.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+20AC, U+2122; }
+@font-face { font-family: 'Bebas Neue'; font-weight: 400; font-display: swap; src: url("fonts/bebas-neue-400-latin-ext.woff2") format('woff2'); unicode-range: U+0100-02BA, U+1E00-1EFF; }
+@font-face { font-family: 'Syne'; font-weight: 400 800; font-display: swap; src: url("fonts/syne-latin.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+2000-206F, U+20AC, U+2122; }
+@font-face { font-family: 'Syne'; font-weight: 400 800; font-display: swap; src: url("fonts/syne-latin-ext.woff2") format('woff2'); unicode-range: U+0100-02BA, U+1E00-1EFF; }
+@font-face { font-family: 'DM Mono'; font-weight: 300; font-display: swap; src: url("fonts/dm-mono-300-latin.woff2") format('woff2'); }
+@font-face { font-family: 'DM Mono'; font-weight: 400; font-display: swap; src: url("fonts/dm-mono-400-latin.woff2") format('woff2'); }
+@font-face { font-family: 'DM Mono'; font-weight: 500; font-display: swap; src: url("fonts/dm-mono-500-latin.woff2") format('woff2'); }
+
+:root {
+  --bg: #F5F1EA; --surface: #ECE6DB; --surface-2: #E2DACB; --ink: #1A1715; --sec: #5C544C; --muted: #8C8278;
+  --accent: #F26B1F; --hot: #FF8A1F; --deep: #C44A0F; --line: rgba(26,23,21,0.12); --line-soft: rgba(26,23,21,0.08);
+  --dark: #1A1715; --cream: #F5F1EA; --line-dark: rgba(245,241,234,0.12);
+  --display: 'Bebas Neue', Impact, sans-serif; --body: 'Syne', 'Helvetica Neue', sans-serif; --mono: 'DM Mono', 'Courier New', monospace;
+  --container: 1400px;
 }
+* { box-sizing: border-box; }
 html { overflow-x: hidden; }
-body { overflow-x: clip; } /* clips (keeps phones from panning sideways) without becoming a scroll container */
-html { padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px); }
-body { padding: 0; }
-/* The artifact host resets img{max-width:100%}; the original relies on the UA default, otherwise the nav logo collapses to 0 width when the nav overflows (mobile). */
-img { max-width: none; }
-::selection { background: var(--accent); color: #F5F1EA; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-weight: 300; font-size: 17px; line-height: 1.8; -webkit-font-smoothing: antialiased; overflow-x: clip; }
 a { color: inherit; text-decoration: none; }
-.reveal { opacity: 0; transform: translateY(32px); transition: opacity 850ms cubic-bezier(.16,1,.3,1), transform 850ms cubic-bezier(.16,1,.3,1); }
-.reveal.in { opacity: 1; transform: none; }
+img { max-width: 100%; display: block; }
+::selection { background: var(--accent); color: var(--cream); }
+.container { max-width: var(--container); margin: 0 auto; padding-left: max(52px, env(safe-area-inset-left, 0px)); padding-right: max(52px, env(safe-area-inset-right, 0px)); }
+.label { font-family: var(--mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); }
+.dark .label { color: var(--accent); }
+h1, h2, h3 { margin: 0; }
+h2.big { font-family: var(--display); font-size: clamp(56px, 8vw, 100px); line-height: 0.9; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink); }
+h2.big em, h1 em { font-style: normal; color: var(--accent); }
+h2.big .muted { color: var(--muted); }
+.dark h2.big { color: var(--cream); }
+.sub { font-family: var(--body); font-weight: 300; font-size: 18px; line-height: 1.7; color: var(--sec); }
+.dark .sub { color: rgba(245,241,234,0.72); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: var(--ink); color: var(--cream); border: 0; font-family: var(--body); font-weight: 500; font-size: 15px; padding: 18px 28px; border-radius: 4px; cursor: pointer; white-space: nowrap; transition: transform 300ms cubic-bezier(.16,1,.3,1), background 200ms; }
+.btn:hover { background: #2a2521; }
+.btn.accent { background: var(--accent); color: var(--ink); }
+.btn.accent:hover { background: var(--hot); }
+.btn.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+.dark .btn.ghost { color: var(--cream); border-color: var(--line-dark); }
+.textlink { font-family: var(--body); font-weight: 400; font-size: 13px; color: var(--sec); transition: color 180ms; }
+.textlink:hover { color: var(--accent); }
+.card { background: var(--bg); border: 1px solid var(--line); border-radius: 16px; padding: 36px 32px; position: relative; overflow: hidden; transform-style: preserve-3d; transition: background 400ms, transform 500ms cubic-bezier(.16,1,.3,1); }
+.card .bar { position: absolute; top: 0; left: 0; height: 3px; width: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); transition: transform 500ms cubic-bezier(.16,1,.3,1); }
+.card:hover { background: rgba(242,107,31,0.06); }
+.card:hover .bar { transform: scaleX(1); }
+.dark .card { background: rgba(245,241,234,0.04); border-color: rgba(245,241,234,0.08); }
+.dark .card:hover { background: rgba(242,107,31,0.10); }
+section { padding: 150px 0; border-bottom: 1px solid var(--line-soft); }
+.dark { background: var(--dark); color: var(--cream); border-color: rgba(245,241,234,0.08); }
+.surface { background: var(--surface); }
+.placeholder { outline: 1px dashed rgba(242,107,31,0.45); outline-offset: 4px; position: relative; }
+.placeholder::after { content: attr(data-ph); position: absolute; top: -10px; right: 12px; font-family: var(--mono); font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent); background: var(--bg); padding: 2px 8px; border-radius: 4px; }
+.dark .placeholder::after { background: var(--dark); }
+.rv { opacity: 0; transform: translateY(40px); transition: opacity 900ms cubic-bezier(.16,1,.3,1), transform 900ms cubic-bezier(.16,1,.3,1); }
+.rv.in { opacity: 1; transform: none; }
+.rv.d1 { transition-delay: 100ms; } .rv.d2 { transition-delay: 200ms; } .rv.d3 { transition-delay: 300ms; } .rv.d4 { transition-delay: 400ms; }
+
+/* nav */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 14px 52px; background: transparent; border-bottom: 1px solid transparent; transition: background 400ms cubic-bezier(.16,1,.3,1), border-color 400ms; }
+.nav.scrolled { background: rgba(245,241,234,0.85); backdrop-filter: blur(28px) saturate(140%); -webkit-backdrop-filter: blur(28px) saturate(140%); border-bottom-color: var(--line-soft); }
+.nav .logo img { height: 38px; }
+.nav .right { display: flex; align-items: center; gap: 28px; }
+.nav .links { display: flex; align-items: center; gap: 28px; }
+.nav .links a { font-family: var(--mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--sec); transition: color 180ms; white-space: nowrap; }
+.nav .links a:hover { color: var(--accent); }
+.nav .divider { width: 1px; height: 14px; background: rgba(26,23,21,0.15); }
+.lang { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(26,23,21,0.45); }
+.lang button { background: none; border: 0; color: inherit; font: inherit; letter-spacing: inherit; cursor: pointer; padding: 4px 2px; transition: color 180ms; }
+.lang button:hover { color: var(--ink); }
+.lang button.on { color: var(--accent); cursor: default; }
+.dark .lang { color: rgba(245,241,234,0.55); } .dark .lang button:hover { color: var(--cream); }
+.nav .btn { font-size: 13px; padding: 12px 22px; }
+
+/* hero */
+.hero { min-height: 100vh; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 110px 0 52px; background: var(--bg); background-image: linear-gradient(to right, rgba(26,23,21,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(26,23,21,0.04) 1px, transparent 1px); background-size: 64px 64px; border-bottom: 0; }
+.hero .ghost { position: absolute; left: 0; right: 0; top: 20%; font-family: var(--display); font-size: clamp(140px, 20vw, 260px); line-height: 0.9; letter-spacing: 0.5px; text-transform: uppercase; color: rgba(26,23,21,0.05); white-space: nowrap; text-align: center; pointer-events: none; user-select: none; will-change: transform; }
+.sphere { position: absolute; right: 2vw; top: 12vh; width: clamp(260px, 27vw, 400px); height: clamp(260px, 27vw, 400px); pointer-events: none; will-change: transform; z-index: 1; }
+.sphere .fallback { width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFB347 0%, #F26B1F 45%, #C44A0F 80%, transparent 100%); filter: blur(2px); display: none; }
+.sphere.no3d .fallback { display: block; }
+.hero .content { position: relative; z-index: 2; }
+.chip { display: inline-flex; align-items: center; gap: 12px; margin-bottom: 28px; font-family: var(--mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--sec); border: 1px solid rgba(26,23,21,0.18); border-radius: 999px; padding: 10px 18px; background: rgba(245,241,234,0.7); }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }
+.hero h1 { font-family: var(--display); font-size: clamp(64px, 9vw, 150px); line-height: 0.87; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink); perspective: 1000px; display: flex; flex-direction: column; align-items: flex-start; }
+.hero .bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; padding-top: 40px; margin-top: 40px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.hero .body { max-width: 520px; margin: 0; }
+.hero .ctacol { display: flex; flex-direction: column; align-items: flex-end; gap: 14px; }
+.hero .ctarow { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.hero .note { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; color: var(--muted); text-align: right; }
+.proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 52px; background: var(--line); border: 1px solid var(--line); }
+.proof div b { font-weight: 600; margin-right: 4px; }
+.proof div { background: var(--bg); padding: 18px 22px; font-family: var(--body); font-weight: 400; font-size: 14px; color: var(--ink); display: flex; align-items: center; gap: 12px; }
+
+/* marquee */
+.marquee { background: var(--dark); border-top: 1px solid rgba(245,241,234,0.08); border-bottom: 1px solid rgba(245,241,234,0.08); overflow: hidden; padding: 22px 0; }
+.marquee .track { display: flex; gap: 40px; white-space: nowrap; width: max-content; will-change: transform; }
+.marquee .track span { font-family: var(--mono); font-size: 11px; letter-spacing: 3.5px; text-transform: uppercase; color: var(--cream); display: inline-flex; align-items: center; gap: 40px; }
+.marquee .track span i { color: var(--accent); font-style: normal; }
+
+/* video */
+.vsl { text-align: center; padding: 120px 0 100px; }
+.vsl .label { display: block; margin-bottom: 32px; }
+.vcard { position: relative; max-width: 1100px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: 18px; overflow: hidden; background: #221d19; border: 1px solid rgba(245,241,234,0.1); box-shadow: 0 40px 100px rgba(0,0,0,0.45); }
+.vcard .cover { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; cursor: pointer; background: radial-gradient(ellipse at 50% 85%, rgba(242,107,31,0.4), rgba(242,107,31,0.08) 40%, transparent 65%), linear-gradient(180deg, #24201b, #15120f); }
+.vcard .cover img { height: 28px; opacity: 0.9; }
+.vcard .cover h3 { font-family: var(--display); font-size: clamp(40px, 5vw, 72px); line-height: 0.95; letter-spacing: 0.5px; text-transform: uppercase; color: var(--cream); }
+.play { width: 104px; height: 104px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFB347 0%, #F26B1F 60%, #C44A0F 100%); border: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 14px rgba(242,107,31,0.18), 0 20px 50px rgba(196,74,15,0.4); transition: transform 300ms cubic-bezier(.16,1,.3,1); }
+.play:hover { transform: scale(1.08); }
+.play::after { content: ""; width: 0; height: 0; border-top: 17px solid transparent; border-bottom: 17px solid transparent; border-left: 28px solid #1A1715; margin-left: 7px; }
+.avatars { display: flex; justify-content: center; margin-top: 8px; }
+.avatars .av { width: 50px; height: 50px; border-radius: 50%; border: 2px solid var(--accent); background: #2a2420; margin-left: -10px; display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; color: rgba(245,241,234,0.8); box-shadow: 0 0 0 2px #1a1612; }
+.avatars a { display: block; margin-left: -10px; border-radius: 50%; transition: transform 300ms cubic-bezier(.16,1,.3,1); } .avatars a:first-child { margin-left: 0; } .avatars a:hover { transform: translateY(-3px); z-index: 2; position: relative; } .avatars a .av { margin-left: 0; }
+.avatars .av:first-child { margin-left: 0; }
+.avatars img.av { object-fit: cover; }
+.vcard .words { font-family: var(--body); font-weight: 500; font-size: 15px; color: var(--cream); }
+.vcard .words i { font-style: normal; color: var(--accent); }
+.vcard video { position: absolute; inset: 0; width: 100%; height: 100%; display: none; background: #000; }
+.vcard.playing .cover { display: none; } .vcard.playing video { display: block; }
+.vsl .or { margin-top: 28px; font-family: var(--body); font-weight: 300; font-size: 15px; color: rgba(245,241,234,0.7); display: flex; gap: 10px; justify-content: center; align-items: center; flex-wrap: wrap; }
+.vsl .or a { font-family: var(--mono); font-size: 14px; color: var(--cream); border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+
+/* logos */
+.logos { text-align: center; padding: 100px 0; }
+.logos h2 { font-family: var(--mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--muted); margin-bottom: 44px; }
+.logowall { overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent); }
+.logowall .track { display: flex; gap: 80px; width: max-content; animation: slide 30s linear infinite; }
+.logowall .track span { font-family: var(--display); font-size: 40px; letter-spacing: 1px; color: rgba(26,23,21,0.28); white-space: nowrap; }
+@keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* testimonials */
+.testi .label { display: block; text-align: center; margin-bottom: 40px; }
+.featured { max-width: 860px; margin: 0 auto; text-align: center; }
+.featured blockquote { margin: 0; font-family: var(--body); font-weight: 500; font-size: clamp(22px, 2.4vw, 32px); line-height: 1.4; color: var(--ink); }
+.dark .featured blockquote { color: var(--cream); }
+.person { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 28px; }
+.person .av { width: 52px; height: 52px; border-radius: 50%; background: var(--ink); color: var(--cream); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 14px; flex-shrink: 0; }
+.dark .person .av { background: var(--cream); color: var(--ink); }
+.person img.av { object-fit: cover; display: block; background: var(--surface-2); }
+.person .who { text-align: left; }
+.person .name { font-family: var(--body); font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.person .name .li { display: inline-flex; width: 18px; height: 18px; color: var(--muted); transition: color 180ms, transform 300ms cubic-bezier(.16,1,.3,1); }
+.person .name .li:hover { color: #0A66C2; transform: translateY(-1px); }
+.person .name .li svg { width: 14px; height: 14px; }
+.person .role { font-family: var(--mono); font-size: 11px; letter-spacing: 1px; color: var(--muted); }
+.tgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 56px; }
+.tcard { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.tcard p { margin: 0; font-family: var(--body); font-weight: 300; font-size: 17px; line-height: 1.7; color: var(--sec); }
+.tcard p b { color: var(--ink); font-weight: 600; }
+.dark .tcard p { color: rgba(245,241,234,0.75); } .dark .tcard p b { color: var(--cream); }
+.tcard .person { justify-content: flex-start; margin-top: 0; }
+
+/* why / how */
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 72px; }
+.why .icon { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--accent); }
+.why .icon svg { width: 22px; height: 22px; }
+.why h3, .how h3 { font-family: var(--display); font-size: clamp(30px, 3.2vw, 44px); line-height: 1; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink); margin: 0 0 12px; }
+.why p, .how p { margin: 0; font-family: var(--body); font-weight: 300; font-size: 16px; line-height: 1.75; color: var(--sec); }
+.how .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 72px; background: var(--line); border: 1px solid var(--line); }
+.how .step { background: var(--bg); padding: 40px 32px 44px; }
+.how .num { font-family: var(--display); font-size: 88px; line-height: 0.85; color: var(--accent); letter-spacing: -0.02em; text-shadow: 4px 4px 0 var(--ink); margin-bottom: 14px; }
+
+/* audit (dark) */
+.audit { position: relative; overflow: hidden; }
+.audit .ghost { position: absolute; right: -20px; bottom: -60px; font-family: var(--display); font-size: clamp(160px, 20vw, 240px); line-height: 0.9; letter-spacing: 0.5px; text-transform: uppercase; color: rgba(242,107,31,0.08); white-space: nowrap; pointer-events: none; user-select: none; will-change: transform; }
+.audit .inner { position: relative; max-width: 1000px; margin: 0 auto; }
+.acc { margin-top: 56px; border-bottom: 1px solid var(--line-dark); }
+.acc .it { border-top: 1px solid var(--line-dark); transition: background 300ms; }
+.acc .it.open { background: rgba(242,107,31,0.08); }
+.acc button { width: 100%; text-align: left; background: transparent; border: 0; cursor: pointer; padding: 26px 24px; display: grid; grid-template-columns: 48px 1fr 28px; gap: 18px; align-items: center; color: var(--cream); }
+.acc button .n { font-family: var(--mono); font-size: 11px; letter-spacing: 2px; color: var(--muted); }
+.acc button .q { font-family: var(--body); font-weight: 600; font-size: 20px; line-height: 1.35; }
+.acc button .chev { font-family: var(--mono); font-size: 18px; color: var(--accent); text-align: center; transition: transform 300ms cubic-bezier(.16,1,.3,1); }
+.acc .it.open .chev { transform: rotate(45deg); }
+.acc .a { max-height: 0; overflow: hidden; transition: max-height 500ms cubic-bezier(.16,1,.3,1); }
+.acc .a p { margin: 0; padding: 0 24px 28px 90px; font-family: var(--body); font-weight: 300; font-size: 16px; line-height: 1.75; color: rgba(245,241,234,0.72); max-width: 820px; }
+.acc .a p b { color: var(--cream); }
+.acc .it.open .a { max-height: 300px; }
+.audit .close { margin-top: 56px; padding: 44px 40px; border-radius: 16px; background: var(--cream); color: var(--ink); display: flex; justify-content: space-between; align-items: center; gap: 32px; flex-wrap: wrap; }
+.audit .close h3 { font-family: var(--display); font-size: clamp(36px, 4vw, 56px); line-height: 0.95; letter-spacing: 0.5px; text-transform: uppercase; margin: 0 0 12px; }
+.audit .close p { margin: 0; font-family: var(--body); font-weight: 300; font-size: 16px; color: var(--sec); line-height: 1.7; max-width: 520px; }
+
+/* final cta */
+.final { text-align: center; position: relative; overflow: hidden; padding: 180px 0 160px; }
+.final .glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 900px; height: 900px; max-width: 100vw; background: radial-gradient(circle, rgba(242,107,31,0.22) 0%, transparent 60%); pointer-events: none; animation: breathe 6s ease-in-out infinite; }
+@keyframes breathe { 0%,100% { transform: translate(-50%,-50%) scale(1); opacity: 1; } 50% { transform: translate(-50%,-50%) scale(1.12); opacity: 0.75; } }
+.final .inner { position: relative; max-width: 1100px; margin: 0 auto; }
+.final .labelrow { display: flex; align-items: center; gap: 20px; justify-content: center; margin-bottom: 52px; }
+.final .labelrow i { flex: 1; max-width: 80px; height: 1px; background: rgba(26,23,21,0.15); }
+.final h2 em { font-style: normal; color: var(--accent); }
+.final h2 { font-family: var(--display); font-size: clamp(64px, 9.5vw, 132px); line-height: 0.95; letter-spacing: 0.5px; text-transform: uppercase; color: var(--ink); }
+.final .sub { max-width: 640px; margin: 56px auto 0; }
+.final .btn { margin-top: 44px; padding: 20px 32px; }
+.final .links { margin-top: 24px; font-family: var(--mono); font-size: 13px; letter-spacing: 0.5px; color: var(--sec); display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+.final .links a { color: var(--ink); border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+
+/* footer */
+footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; border-top: 1px solid rgba(245,241,234,0.08); }
+.news { padding-bottom: 48px; border-bottom: 1px solid var(--line-dark); }
+.news .legal { font-family: var(--body); font-weight: 300; font-size: 12px; color: rgba(245,241,234,0.5); margin: 10px 0 0; } .news .legal a { color: rgba(245,241,234,0.75); border-bottom: 1px solid var(--accent); }
+.news h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin: 0 0 16px; }
+.news form { display: flex; gap: 10px; max-width: 440px; }
+.news input { flex: 1; height: 46px; border-radius: 4px; border: 1px solid var(--line-dark); background: rgba(245,241,234,0.04); color: var(--cream); padding: 0 14px; font: inherit; font-size: 14px; }
+.news input::placeholder { color: rgba(245,241,234,0.4); }
+.news button { height: 46px; padding: 0 18px; border-radius: 4px; border: 0; background: var(--accent); color: var(--ink); font-family: var(--body); font-weight: 500; font-size: 14px; cursor: pointer; }
+.fcols { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 60px; padding: 60px 0; border-bottom: 1px solid var(--line-dark); }
+.fcols img { height: 36px; margin-bottom: 18px; }
+.fcols .desc { font-family: var(--body); font-weight: 300; font-size: 14px; color: rgba(245,241,234,0.7); line-height: 1.7; margin: 0; max-width: 340px; }
+.fcols .email { font-family: var(--body); font-weight: 500; font-size: 15px; color: var(--cream); margin-top: 18px; display: inline-block; border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+.fcols .social { display: flex; gap: 12px; margin-top: 22px; }
+.fcols .social a { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line-dark); display: inline-flex; align-items: center; justify-content: center; color: rgba(245,241,234,0.75); transition: color 180ms, border-color 180ms, background 180ms; }
+.fcols .social a:hover { color: var(--ink); background: var(--accent); border-color: var(--accent); }
+.fcols .social svg { width: 16px; height: 16px; }
+.fcols h5 { font-family: var(--mono); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin: 0 0 22px; }
+.fcols ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.fcols li a { font-family: var(--body); font-weight: 400; font-size: 14px; color: rgba(245,241,234,0.7); transition: color 180ms; }
+.fcols li a:hover { color: var(--accent); }
+.fbottom .legal { color: rgba(245,241,234,0.5); transition: color 180ms; } .fbottom .legal:hover { color: var(--accent); }
+footer .lang { color: rgba(245,241,234,0.55); } footer .lang button:hover { color: var(--cream); }
+.fbottom { padding-top: 32px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; font-family: var(--mono); font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(245,241,234,0.5); }
+
+@media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } .logowall .track { animation: none; } .final .glow { animation: none; } }
+@media (max-width: 1024px) { .grid3, .how .steps, .tgrid { grid-template-columns: 1fr; } .fcols { grid-template-columns: 1fr; gap: 36px; } }
+@media (max-width: 900px) {
+  .container { padding-left: 24px; padding-right: 24px; }
+  section { padding: 90px 0; }
+  .nav { padding: 12px 20px; } .nav .links, .nav .divider { display: none; }
+  .hero { padding-top: 100px; }
+  .sphere { width: 200px; height: 200px; top: -30px; right: -70px; opacity: 0.5; }
+  .hero .ctacol { align-items: flex-start; } .hero .note { text-align: left; }
+  .proof { grid-template-columns: 1fr; }
+  .vcard .cover { gap: 14px; } .play { width: 76px; height: 76px; } .avatars .av { width: 40px; height: 40px; font-size: 11px; }
+  .acc button { grid-template-columns: 32px 1fr 20px; padding: 20px 12px; } .acc button .q { font-size: 17px; } .acc .a p { padding: 0 12px 22px 12px; } .acc .it.open .a { max-height: 420px; }
+  .audit .close { padding: 32px 24px; }
+}
+@media (max-width: 600px) { .proof { grid-template-columns: 1fr; } .proof div { padding: 14px 18px; } .news input { font-size: 16px; } }
+
+/* lead magnet (popup + botón flotante) */
+.lm { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 350ms cubic-bezier(.16,1,.3,1); }
+.lm.on { opacity: 1; pointer-events: auto; }
+.lm-back { position: absolute; inset: 0; background: rgba(26,23,21,0.55); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.lm-card { position: relative; width: 100%; max-width: 560px; max-height: calc(100vh - 40px); overflow: auto; background: var(--dark); color: var(--cream); border-radius: 18px; border-top: 5px solid var(--accent); padding: 34px 38px 30px; box-shadow: 0 50px 120px rgba(0,0,0,0.5); transform: translateY(24px) scale(0.98); transition: transform 500ms cubic-bezier(.16,1,.3,1); }
+.lm.on .lm-card { transform: none; }
+.lm-x { position: absolute; top: 16px; right: 16px; width: 38px; height: 38px; border-radius: 50%; border: 0; background: rgba(245,241,234,0.08); color: var(--cream); font-size: 22px; line-height: 1; cursor: pointer; transition: background 180ms; }
+.lm-x:hover { background: rgba(245,241,234,0.16); }
+.lm-head { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.lm-ico { width: 60px; height: 60px; border-radius: 50%; border: 1.5px solid var(--accent); background: rgba(242,107,31,0.12); display: flex; align-items: center; justify-content: center; color: var(--accent); flex-shrink: 0; }
+.lm-ico svg { width: 26px; height: 26px; }
+.lm-pill { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: var(--ink); font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; padding: 10px 16px; border-radius: 999px; font-weight: 500; }
+.lm-card h3 { font-family: var(--display); font-size: clamp(34px, 5vw, 46px); line-height: 0.95; letter-spacing: 0.5px; text-transform: uppercase; color: var(--cream); margin: 0 0 10px; }
+.lm-card h3 em { font-style: normal; color: var(--accent); }
+.lm-sub { font-family: var(--mono); font-size: 12px; letter-spacing: 1px; color: rgba(245,241,234,0.6); margin: 0 0 22px; }
+.lm-form .r2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.lm-form label { display: block; font-family: var(--body); font-weight: 600; font-size: 13px; margin-bottom: 14px; color: var(--cream); }
+.lm-form label i { color: var(--accent); font-style: normal; }
+.lm-form input { display: block; width: 100%; margin-top: 6px; height: 48px; border-radius: 6px; border: 1px solid rgba(245,241,234,0.16); background: rgba(245,241,234,0.05); color: var(--cream); padding: 0 14px; font: inherit; font-weight: 400; font-size: 16px; transition: border-color 180ms, background 180ms; }
+.lm-form input::placeholder { color: rgba(245,241,234,0.35); }
+.lm-form input:focus { outline: 0; border-color: var(--accent); background: rgba(242,107,31,0.06); }
+.lm-form input.err { border-color: #E5484D; }
+.lm-btn { width: 100%; height: 56px; border: 0; border-radius: 6px; background: var(--accent); color: var(--ink); font-family: var(--body); font-weight: 600; font-size: 16px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 10px; transition: background 200ms, transform 300ms cubic-bezier(.16,1,.3,1); margin-top: 4px; }
+.lm-btn:hover { background: var(--hot); }
+.lm-btn:disabled { opacity: 0.7; cursor: wait; }
+.lm-foot a { color: rgba(245,241,234,0.8); border-bottom: 1px solid var(--accent); }
+.lm-foot { text-align: center; font-family: var(--body); font-weight: 300; font-size: 12.5px; color: rgba(245,241,234,0.55); margin: 16px 0 0; }
+.lm-done { text-align: center; padding: 10px 0 4px; }
+.lm-done .ok { width: 68px; height: 68px; border-radius: 50%; background: var(--accent); color: var(--ink); display: inline-flex; align-items: center; justify-content: center; font-size: 30px; margin-bottom: 18px; }
+.lm-done h3 { margin-bottom: 8px; }
+.lm-done p { font-weight: 300; font-size: 15px; color: rgba(245,241,234,0.75); margin: 0 0 22px; line-height: 1.6; }
+.lm-done .lm-btn { text-decoration: none; }
+.lm-done .cal { display: inline-block; margin-top: 16px; font-family: var(--mono); font-size: 12px; color: var(--cream); border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+.lm-fab { position: fixed; left: 20px; bottom: 20px; z-index: 250; display: inline-flex; align-items: center; gap: 10px; background: var(--dark); color: var(--cream); border: 1px solid rgba(245,241,234,0.14); border-radius: 999px; padding: 12px 18px 12px 14px; font-family: var(--mono); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; cursor: pointer; box-shadow: 0 16px 40px rgba(26,23,21,0.25); transform: translateY(80px); opacity: 0; transition: transform 500ms cubic-bezier(.16,1,.3,1), opacity 400ms; }
+.lm-fab.on { transform: none; opacity: 1; }
+.lm-fab i { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); display: inline-flex; align-items: center; justify-content: center; color: var(--ink); font-style: normal; }
+.lm-fab i svg { width: 14px; height: 14px; }
+.news .ok { font-family: var(--mono); font-size: 12px; color: var(--accent); margin: 10px 0 0; letter-spacing: 1px; }
+@media (max-width: 600px) { .lm { padding: 12px; } .lm-card { padding: 20px 18px 16px; border-radius: 14px; max-height: calc(100vh - 24px); } .lm-form .r2 { grid-template-columns: 1fr; gap: 0; } .lm-ico { display: none; } .lm-head { margin-bottom: 12px; } .lm-pill { font-size: 10px; padding: 8px 12px; } .lm-card h3 { font-size: 30px; } .lm-sub { font-size: 11px; margin-bottom: 14px; } .lm-form label { margin-bottom: 10px; font-size: 12.5px; } .lm-form input { height: 42px; margin-top: 5px; } .lm-btn { height: 50px; font-size: 15px; } .lm-foot { font-size: 11px; margin-top: 10px; } .lm-x { top: 10px; right: 10px; width: 34px; height: 34px; } .lm-fab { left: 12px; bottom: 12px; padding: 10px 14px 10px 10px; font-size: 10px; } }
 </style>
 </head>
 <body>
-<div id="app"></div>
-<script>window.__resources = { solynLogo: 'assets/solyn-logo.png', solynLogoLight: 'assets/solyn-logo-light.png' };</script>
-<!-- Three.js -->
-<script src="vendor/three.min.js?v=202611030044"></script>
-<!-- GSAP + ScrollTrigger -->
-<script src="vendor/gsap.min.js?v=202611030044"></script>
-<script src="vendor/ScrollTrigger.min.js?v=202611030044"></script>
-<!-- SplitType -->
-<script src="vendor/split-type.min.js?v=202611030044"></script>
-<!-- Lenis -->
-<script src="vendor/lenis.min.js?v=202611030044"></script>
-<!-- React -->
-<script src="vendor/react.development.js?v=202611030044"></script>
-<script src="vendor/react-dom.development.js?v=202611030044"></script>
-<!-- App (JSX precompiled; sources in jsx/) -->
-<script src="src/motion.js?v=202611030044"></script>
-<script src="src/i18n.js?v=202611030044"></script>
-<script src="src/Loader.js?v=202611030044"></script>
-<script src="src/HeroSphere.js?v=202611030044"></script>
-<script src="src/Nav.js?v=202611030044"></script>
-<script src="src/Hero.js?v=202611030044"></script>
-<script src="src/Marquee.js?v=202611030044"></script>
-<script src="src/Problem.js?v=202611030044"></script>
-<script src="src/Guarantee.js?v=202611030044"></script>
-<script src="src/Process.js?v=202611030044"></script>
-<script src="src/Numbers.js?v=202611030044"></script>
-<script src="src/CTA.js?v=202611030044"></script>
-<script src="src/Footer.js?v=202611030044"></script>
+
+<nav class="nav" id="nav">
+  <a class="logo" href="#top" data-go="top"><img id="navlogo" src="assets/solyn-logo.png" alt="SOLYN"></a>
+  <div class="right">
+    <div class="links">
+      <a href="#why" data-go="why" data-i="nav_1"></a>
+      <a href="#how" data-go="how" data-i="nav_2"></a>
+      <a href="#clients" data-go="clients" data-i="nav_3"></a>
+      <a href="#audit" data-go="audit" data-i="nav_4"></a>
+      <span class="divider"></span>
+    </div>
+    <div class="lang" aria-label="Language"><button data-lang="en">EN</button><span>/</span><button data-lang="es">ES</button></div>
+    <a class="btn magnetic" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener"><span data-i="nav_cta"></span> →</a>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="ghost" id="ghost">EMAIL OUTREACH</div>
+    <div class="sphere" id="sphere"><div class="fallback"></div></div>
+    <div class="container content">
+      <span class="chip"><span class="dot"></span><span data-i="hero_chip"></span></span>
+      <h1 id="h1"><span data-i="hero_h1"></span><em data-i="hero_h2"></em></h1>
+      <div class="bottom">
+        <p class="sub body" data-i="hero_sub"></p>
+        <div class="ctacol">
+          <div class="ctarow">
+            <a class="btn magnetic" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener"><span data-i="hero_cta"></span> <span>→</span></a>
+            <a class="textlink" href="#video" data-go="video" data-i="hero_video"></a>
+          </div>
+          <div class="note" data-i="hero_note"></div>
+        </div>
+      </div>
+      <div class="proof"><div><span class="dot"></span><span data-i="proof_1"></span></div><div><span class="dot"></span><span data-i="proof_2"></span></div><div><span class="dot"></span><span data-i="proof_3"></span></div></div>
+    </div>
+  </section>
+
+  <div class="marquee"><div class="track" id="mtrack"></div></div>
+
+  <section class="vsl dark" id="video">
+    <div class="container">
+      <span class="label" data-i="video_label"></span>
+      <div class="vcard rv" id="vcard">
+        <div class="cover" id="cover" role="button" aria-label="Play">
+          <img src="assets/solyn-logo-light.png" alt="SOLYN">
+          <h3 data-i="video_h"></h3>
+          <button class="play" aria-label="Play"></button>
+        </div>
+        <video id="player" playsinline preload="none" controls></video>
+      </div>
+      <p class="or"><span data-i="video_or"></span> <a href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener">calendly.com/info-solyn/30min</a> <span>·</span> <span data-i="or_mail"></span> <a href="mailto:info.solyn@gmail.com">info.solyn@gmail.com</a></p>
+    </div>
+  </section>
+
+
+  <section class="testi" id="clients">
+    <div class="container">
+      <span class="label" data-i="testi_label"></span>
+      <div class="featured rv">
+        <blockquote data-i="t1_q"></blockquote>
+        <div class="person"><img class="av" src="assets/testimonios/pedro-sabatte.jpg" alt="Pedro Sabatte" width="52" height="52"><div class="who"><div class="name"><span data-i="t1_n"></span><a class="li" href="https://www.linkedin.com/in/pedro-sabatte/" target="_blank" rel="noopener" aria-label="Pedro Sabatte en LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></div><div class="role" data-i="t1_r"></div></div></div>
+      </div>
+      <div class="tgrid">
+        <div class="card tcard tilt rv d1"><div class="bar"></div><p data-i="t2_q"></p><div class="person"><img class="av" src="assets/testimonios/facundo-rovere.jpg" alt="Facundo Rovere" width="52" height="52"><div class="who"><div class="name"><span data-i="t2_n"></span><a class="li" href="https://www.linkedin.com/in/facundo-rovere-a6623857/" target="_blank" rel="noopener" aria-label="Facundo Rovere en LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></div><div class="role" data-i="t2_r"></div></div></div></div>
+        <div class="card tcard tilt rv d2"><div class="bar"></div><p data-i="t3_q"></p><div class="person"><img class="av" src="assets/testimonios/cristobal-pardi.jpg" alt="Cristóbal Pardi" width="52" height="52"><div class="who"><div class="name"><span data-i="t3_n"></span><a class="li" href="https://www.linkedin.com/in/cristobal-pardi-b84187193/" target="_blank" rel="noopener" aria-label="Cristóbal Pardi en LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></div><div class="role" data-i="t3_r"></div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="container">
+      <span class="label" data-i="why_label"></span>
+      <h2 class="big" style="margin-top:28px" data-i="why_h"></h2>
+      <div class="grid3">
+        <div class="card tilt rv"><div class="bar"></div><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-7 7-7s7 3 7 7"/><path d="m16 11 2 2 4-4"/></svg></div><h3 data-i="why_1_t"></h3><p data-i="why_1_d"></p></div>
+        <div class="card tilt rv d1"><div class="bar"></div><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div><h3 data-i="why_2_t"></h3><p data-i="why_2_d"></p></div>
+        <div class="card tilt rv d2"><div class="bar"></div><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-i="why_3_t"></h3><p data-i="why_3_d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="container">
+      <span class="label" data-i="how_label"></span>
+      <h2 class="big" style="margin-top:28px" data-i="how_h"></h2>
+      <div class="steps">
+        <div class="step rv"><div class="num">01</div><h3 data-i="how_1_t"></h3><p data-i="how_1_d"></p></div>
+        <div class="step rv d1"><div class="num">02</div><h3 data-i="how_2_t"></h3><p data-i="how_2_d"></p></div>
+        <div class="step rv d2"><div class="num">03</div><h3 data-i="how_3_t"></h3><p data-i="how_3_d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Segunda tanda de testimonios: oculta hasta tener más testimonios reales (quitar "hidden") -->
+  <section class="testi surface" hidden>
+    <div class="container">
+      <span class="label" data-i="more_label"></span>
+      <h2 class="big" style="margin-top:28px" data-i="more_h"></h2>
+      <div class="tgrid" style="margin-top:72px">
+        <div class="card tcard tilt rv placeholder" data-ph="placeholder"><div class="bar"></div><p data-i="t4_q"></p><div class="person"><div class="av">DM</div><div class="who"><div class="name" data-i="t4_n"></div><div class="role" data-i="t4_r"></div></div></div></div>
+        <div class="card tcard tilt rv d1 placeholder" data-ph="placeholder"><div class="bar"></div><p data-i="t5_q"></p><div class="person"><div class="av">SM</div><div class="who"><div class="name" data-i="t5_n"></div><div class="role" data-i="t5_r"></div></div></div></div>
+        <div class="card tcard tilt rv d2 placeholder" data-ph="placeholder"><div class="bar"></div><p data-i="t6_q"></p><div class="person"><div class="av">TP</div><div class="who"><div class="name" data-i="t6_n"></div><div class="role" data-i="t6_r"></div></div></div></div>
+        <div class="card tcard tilt rv d3 placeholder" data-ph="placeholder"><div class="bar"></div><p data-i="t7_q"></p><div class="person"><div class="av">AG</div><div class="who"><div class="name" data-i="t7_n"></div><div class="role" data-i="t7_r"></div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="audit dark" id="audit">
+    <div class="ghost" id="aghost" data-i="audit_ghost"></div>
+    <div class="container"><div class="inner">
+      <span class="label" data-i="audit_label"></span>
+      <h2 class="big" style="margin-top:28px" data-i="audit_h"></h2>
+      <p class="sub" style="margin-top:28px; max-width:640px" data-i="audit_sub"></p>
+      <div class="acc" id="acc"></div>
+      <div class="close rv">
+        <div><h3 data-i="audit_close_t"></h3><p data-i="audit_close_d"></p></div>
+        <a class="btn accent magnetic" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener"><span data-i="audit_cta"></span> →</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="final">
+    <div class="glow"></div>
+    <div class="container inner">
+      <div class="labelrow"><i></i><span class="label" data-i="final_label"></span><i></i></div>
+      <h2 id="finalh" data-i="final_h"></h2>
+      <p class="sub" data-i="final_sub"></p>
+      <a class="btn magnetic" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener"><span data-i="final_cta"></span> <span>→</span></a>
+      <div class="links"><a href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener">calendly.com/info-solyn/30min</a><a href="mailto:info.solyn@gmail.com">info.solyn@gmail.com</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="news">
+      <h4 data-i="news_h"></h4>
+      <form id="newsform"><input type="email" id="newsmail" required data-ph-i="news_ph"><button type="submit" data-i="news_btn"></button></form>
+      <p class="legal" data-i="news_legal"></p>
+    </div>
+    <div class="fcols">
+      <div>
+        <img src="assets/solyn-logo-light.png" alt="SOLYN">
+        <p class="desc" data-i="footer_desc"></p>
+        <a class="email" href="mailto:info.solyn@gmail.com">info.solyn@gmail.com</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/solynio" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+          <a href="https://www.instagram.com/solyn.io_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div><h5 data-i="f_quick"></h5><ul><li><a href="#why" data-go="why" data-i="f_q1"></a></li><li><a href="#how" data-go="how" data-i="f_q1b"></a></li><li><a href="#audit" data-go="audit" data-i="f_q2"></a></li><li><a href="mailto:info.solyn@gmail.com" data-i="f_q3"></a></li></ul></div>
+      <div><h5 data-i="f_start"></h5><ul><li><a href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener" data-i="f_s1"></a></li><li><a href="#video" data-go="video" data-i="f_s2"></a></li><li><a href="mailto:info.solyn@gmail.com" data-i="f_s3"></a></li></ul></div>
+    </div>
+    <div class="fbottom"><span data-i="copy"></span><a class="legal" href="privacidad.html" data-i="f_privacy"></a><div class="lang" aria-label="Language"><button data-lang="en">EN</button><span>/</span><button data-lang="es">ES</button></div></div>
+  </div>
+</footer>
+
+<!-- Lead magnet: popup de descarga del Playbook -->
+<div class="lm" id="lm" aria-hidden="true">
+  <div class="lm-back" id="lmback"></div>
+  <div class="lm-card" role="dialog" aria-modal="true" aria-labelledby="lmtitle">
+    <button class="lm-x" id="lmx" aria-label="Cerrar">×</button>
+    <div id="lmmain">
+      <div class="lm-head"><span class="lm-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg></span><span class="lm-pill">🔥 <span data-i="lm_pill"></span></span></div>
+      <h3 id="lmtitle" data-i="lm_title"></h3>
+      <p class="lm-sub" data-i="lm_sub"></p>
+      <form class="lm-form" id="lmform" novalidate>
+        <div class="r2">
+          <label><span data-i="lm_f1"></span> <i>*</i><input name="nombre" autocomplete="given-name" data-ph-i="lm_p1"></label>
+          <label><span data-i="lm_f2"></span> <i>*</i><input name="apellido" autocomplete="family-name" data-ph-i="lm_p2"></label>
+        </div>
+        <label><span data-i="lm_f3"></span> <i>*</i><input name="email" type="email" autocomplete="email" inputmode="email" data-ph-i="lm_p3"></label>
+        <label><span data-i="lm_f4"></span> <i>*</i><input name="telefono" type="tel" autocomplete="tel" inputmode="tel" data-ph-i="lm_p4"></label>
+        <button type="submit" class="lm-btn" id="lmsubmit"><span data-i="lm_btn"></span> →</button>
+        <p class="lm-foot" data-i="lm_foot"></p>
+      </form>
+    </div>
+    <div class="lm-done" id="lmdone" hidden>
+      <div class="ok">✓</div>
+      <h3 data-i="lm_done_t"></h3>
+      <p data-i="lm_done_d"></p>
+      <a class="lm-btn" id="lmdl" href="#" download><span data-i="lm_done_btn"></span> ↓</a>
+      <a class="cal" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener" data-i="lm_done_cal"></a>
+    </div>
+  </div>
+</div>
+<button class="lm-fab" id="lmfab" type="button"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></svg></i><span data-i="lm_fab"></span></button>
+
+<script src="vendor/three.min.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/split-type.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="sphere.js"></script>
 <script>
-// Same boot order as the original bundle: there, scripts were unpacked and the app mounted after window
-// "load" had already fired, so ScrollTrigger calibrates its positions at mount time. Mounting before
-// "load" would add a refresh pass the original never did and shift the Process scrollytelling thresholds.
-(function () {
-  function boot() {
-    "use strict";
-    
-    function App() {
-      React.useEffect(function () {
-        SOLYN_MOTION.init();
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) {
-            if (e.isIntersecting) e.target.classList.add('in');
-          });
-        }, {
-          threshold: 0.12
-        });
-        document.querySelectorAll('.reveal').forEach(function (el) {
-          return io.observe(el);
-        });
-        return function () {
-          return io.disconnect();
-        };
-      }, []);
-      return /*#__PURE__*/React.createElement(SolynLangProvider, null, /*#__PURE__*/React.createElement(Loader, null), /*#__PURE__*/React.createElement(Nav, null), /*#__PURE__*/React.createElement("main", null, /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(Marquee, null), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(Problem, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(Guarantee, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(Process, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(Numbers, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(CTA, null))), /*#__PURE__*/React.createElement(Footer, null));
-    }
-    ReactDOM.createRoot(document.getElementById('app')).render(/*#__PURE__*/React.createElement(App, null));
+const CAL = 'https://calendly.com/info-solyn/30min';
+const PDF = { es: 'assets/SOLYN-Cold-Email-Playbook-2026-ES.pdf', en: 'assets/SOLYN-Cold-Email-Playbook-2026-EN.pdf' };
+const I18N = {
+  es: {
+    nav_1: 'Soluciones', nav_2: 'Cómo funciona', nav_3: 'Clientes', nav_4: 'Auditoría', nav_cta: 'Agendar demo',
+    hero_chip: 'Cold email hecho por nosotros', hero_h1: 'Convertimos el email', hero_h2: 'en ingresos.',
+    hero_sub: 'Respuestas positivas de los compradores exactos que querés, y reuniones en tu calendario semana tras semana.',
+    hero_cta: 'Agendar demo', hero_video: 'Mirá el video (1 min) ↓', hero_note: 'Contanos a quién le vendés. Te mostramos cómo lo alcanzaríamos.',
+    proof_1: '<b>2.700+</b> reuniones agendadas para clientes', proof_2: '<b>25+</b> clientes', proof_3: 'Revisión humana cada día hábil',
+    marquee: ['Cold email', 'Respuestas positivas', 'Reuniones agendadas', 'Revisión humana diaria', 'Dominios protegidos', 'Copy personalizado', 'Semana tras semana'],
+    video_label: 'Mirá: cómo SOLYN agenda reuniones (1:00)', video_h: 'Cómo agendamos reuniones <em style="font-style:normal;color:#F26B1F">para vos</em>',
+    video_words: 'En palabras de nuestros clientes', video_or: 'o agendá directo:', or_mail: 'o escribinos:',
+    logos_h: 'Clientes que conseguimos para nuestros clientes', logos: ['Marca 01', 'Marca 02', 'Marca 03', 'Marca 04', 'Marca 05', 'Marca 06', 'Marca 07', 'Marca 08'],
+    testi_label: 'Lo que dicen nuestros clientes',
+    t1_q: '“Veníamos con malas experiencias, probando agencias que prometían reuniones y entregaban planillas de contactos. Con SOLYN la diferencia se nota a las pocas semanas: las respuestas son de gente que realmente quiere hablar, y <b>cada reunión que entra al calendario ya viene calificada</b>. Hoy es nuestro canal principal para abrir cuentas nuevas.”', t1_n: 'Pedro Sabatte', t1_r: 'Cliente de SOLYN',
+    t2_q: '“Lo que me convenció fue la transparencia. Veo siempre qué se envía, a quién y qué contesta cada uno. Y <b>siempre hay alguien del equipo revisando la campaña todos los días</b> y respondiendo mis consultas, no un sistema que manda emails solo. Las reuniones llegan semana tras semana sin que tengamos que ocuparnos de nada.”', t2_n: 'Facundo Rovere', t2_r: 'Cliente de SOLYN',
+    t3_q: '“Mi miedo era quemar el dominio de la empresa, pero gracias a los chicos eso nunca fue un problema: trabajan con casillas propias, calentadas y protegidas, y el volumen lo manejan ellos. El resultado son <b>conversaciones con decisores a los que nunca habíamos logrado llegar</b> por LinkedIn ni por llamadas.”', t3_n: 'Cristóbal Pardi', t3_r: 'Cliente de SOLYN',
+    why_label: 'Por qué SOLYN', why_h: 'Por qué los equipos <span class="muted">eligen SOLYN.</span>',
+    why_1_t: 'Una persona en tu campaña cada día hábil', why_1_d: 'Un humano real revisa y ajusta tu campaña cada día hábil.',
+    why_2_t: 'Lo aprendido con cada cliente, en la tuya', why_2_d: 'Enviamos emails para muchos clientes a la vez y probamos herramientas todo el tiempo. Cada mes, lo que mejor funciona entra automáticamente en tus campañas.',
+    why_3_t: 'Tus dominios, protegidos', why_3_d: 'Cada casilla envía entre 1 y 5 emails por día de forma aleatoria, con auto-reparación, hasta 6 variantes de copy por paso y 10 asuntos.',
+    how_label: 'Cómo funciona', how_h: 'Tres pasos. <span class="muted">Un resultado.</span>',
+    how_1_t: 'Hablá con SOLYN', how_1_d: 'Contanos a quién le vendés.',
+    how_2_t: 'Lo construimos', how_2_d: 'Tu lista por cargo, tamaño de empresa y sector, el copy y las casillas protegidas.',
+    how_3_t: 'Llegan las respuestas', how_3_d: 'Respuestas positivas y reuniones, con un humano revisando tu campaña cada día hábil.',
+    more_label: 'Clientes', more_h: 'De nuestros <span class="muted">25+ clientes.</span>',
+    t4_q: '“Testimonio sobre el canal: el email sigue siendo uno de los canales más potentes para crecer, pero hacen falta <b>expertos de verdad</b> para que funcione. SOLYN es ese socio.”', t4_n: 'Nombre Apellido', t4_r: 'Cargo, Empresa',
+    t5_q: '“Testimonio comparativo: de todas las empresas de outreach con las que trabajamos, <b>SOLYN fue la mejor</b>. Resultados, transparencia, comunicación.”', t5_n: 'Nombre Apellido', t5_r: 'Cargo, Empresa',
+    t6_q: '“Testimonio sobre calidad: el equipo es <b>rápido, profesional</b> y entiende cómo llegar a la audiencia correcta.”', t6_n: 'Nombre Apellido', t6_r: 'Cargo, Empresa',
+    t7_q: '“Testimonio sobre consistencia: entregan <b>reuniones de calidad de forma constante</b>. Es un placer trabajar con todo el equipo.”', t7_n: 'Nombre Apellido', t7_r: 'Cargo, Empresa',
+    audit_ghost: 'Auditoría', audit_label: 'La auditoría de lead gen', audit_h: '¿Ya trabajás con <em>un proveedor?</em>',
+    audit_sub: 'Hacele estas 6 preguntas. Trabajes con uno hoy o estés evaluando a uno nuevo, las respuestas dicen mucho.',
+    audit: [
+      ['¿Cada casilla envía entre 1 y 5 emails por día, variando a diario, con auto-reparación incluida?', '<b>Falla:</b> si no, están arriesgando tus dominios. Más de 5 por casilla por día, volumen fijo o sin auto-reparación pone en riesgo la entregabilidad.'],
+      ['¿Cuántas variantes de copy corren por paso en cada campaña?', '<b>Falla:</b> una sola variante no aprende. Sin varias versiones por paso no hay forma de saber qué mensaje convierte.'],
+      ['¿Mi tasa de rebote está por debajo del 1%?', '<b>Falla:</b> rebotes altos significan listas sin verificar, y cada rebote daña la reputación de tus dominios.'],
+      ['¿Calentaron cada casilla al menos 3 semanas antes de lanzar?', '<b>Falla:</b> una casilla nueva que envía de golpe termina en spam. El calentamiento no es opcional.'],
+      ['¿Ajustan el copy cada 48 horas según el rendimiento?', '<b>Falla:</b> un copy que no se toca durante semanas se degrada. Las campañas que funcionan se corrigen continuamente.'],
+      ['¿Un experto humano en copy revisa mi campaña todos los días?', '<b>Falla:</b> la automatización sin supervisión repite errores a escala. Alguien tiene que mirar la campaña cada día.'],
+    ],
+    audit_close_t: '¿Falló en alguna? Merecés algo mejor.', audit_close_d: 'No son detalles: son la base de un cold email que de verdad llega.', audit_cta: 'Pedí una auditoría gratis',
+    final_label: '¿Listo?', final_h: 'Tus próximas reuniones<br>empiezan con <em>una llamada.</em>', final_sub: 'Contanos a quién querés llegar. Te mostramos cómo lo alcanzaríamos.', final_cta: 'Agendar demo',
+    news_h: 'Newsletter', news_ph: 'Tu email', news_btn: 'Suscribirme', news_legal: 'Al suscribirte aceptás la <a href="privacidad.html">política de privacidad</a>.', f_privacy: 'Política de privacidad',
+    footer_desc: 'Cold email hecho por nosotros. Respuestas positivas de los compradores exactos que querés, y reuniones en tu calendario semana tras semana.',
+    f_quick: 'Navegar', f_q1: 'Soluciones', f_q1b: 'Cómo funciona', f_q2: 'Auditoría de proveedor', f_q3: 'Trabajá con nosotros',
+    f_start: 'Empezá', f_s1: 'Agendar demo', f_s2: 'Mirá el video', f_s3: 'Escribinos',
+    lm_pill: 'Descarga gratis', lm_title: 'El Playbook de <em>Cold Email</em> 2026 para PyMEs', lm_sub: '25 páginas de estrategias, templates y benchmarks',
+    lm_f1: 'Nombre', lm_f2: 'Apellido', lm_f3: 'Email', lm_f4: 'Teléfono', lm_p1: 'Juan', lm_p2: 'Pérez', lm_p3: 'juan@tuempresa.com', lm_p4: '+54 11 1234 5678',
+    lm_btn: 'Descargar el Playbook', lm_sending: 'Enviando…', lm_foot: 'Sin spam. Al descargar aceptás nuestra <a href="privacidad.html" target="_blank">política de privacidad</a>.',
+    lm_done_t: '¡Listo! Tu playbook <em>se está descargando.</em>', lm_done_d: 'Si no empezó la descarga, tocá el botón. Y si querés que lo hagamos por vos, agendá una demo de 30 minutos.',
+    lm_done_btn: 'Descargar de nuevo', lm_done_cal: 'Agendar una demo →', lm_fab: 'Playbook gratis', lm_err: 'Completá este campo', lm_err_mail: 'Revisá el email',
+    news_ok: '¡Listo! Te sumamos al newsletter.',
+    copy: '© 2026 SOLYN — Todos los derechos reservados',
+  },
+  en: {
+    nav_1: 'Solutions', nav_2: 'How it works', nav_3: 'Clients', nav_4: 'Audit', nav_cta: 'Book demo',
+    hero_chip: 'Done-for-you cold email', hero_h1: 'We turn email', hero_h2: 'into revenue.',
+    hero_sub: 'Positive replies from the exact buyers you want, and meetings on your calendar week after week.',
+    hero_cta: 'Book demo', hero_video: 'Watch the video (1 min) ↓', hero_note: 'Tell us who you sell to. We\'ll show you how we\'d reach them.',
+    proof_1: '<b>2,700+</b> meetings booked for clients', proof_2: '<b>25+</b> customers', proof_3: 'Human review every business day',
+    marquee: ['Cold email', 'Positive replies', 'Meetings booked', 'Daily human review', 'Protected domains', 'Personalized copy', 'Week after week'],
+    video_label: 'Watch: how SOLYN books meetings (1:00)', video_h: 'How we book meetings <em style="font-style:normal;color:#F26B1F">for you</em>',
+    video_words: 'In our clients\' words', video_or: 'or book directly:', or_mail: 'or email us:',
+    logos_h: 'Customers we\'ve landed for our clients', logos: ['Brand 01', 'Brand 02', 'Brand 03', 'Brand 04', 'Brand 05', 'Brand 06', 'Brand 07', 'Brand 08'],
+    testi_label: 'What our clients say',
+    t1_q: '“We came in with bad experiences, having tried agencies that promised meetings and delivered contact spreadsheets. With SOLYN the difference shows within a few weeks: the replies come from people who actually want to talk, and <b>every meeting that lands on the calendar is already qualified</b>. Today it\'s our main channel for opening new accounts.”', t1_n: 'Pedro Sabatte', t1_r: 'SOLYN client',
+    t2_q: '“What convinced me was the transparency. I always see what gets sent, to whom, and what each person replies. And <b>there\'s always someone from the team reviewing the campaign every day</b> and answering my questions, not a system that sends emails on its own. The meetings come in week after week without us having to do anything.”', t2_n: 'Facundo Rovere', t2_r: 'SOLYN client',
+    t3_q: '“My fear was burning the company\'s domain, but with the team that was never a problem: they work with their own inboxes, warmed up and protected, and they handle the volume. The result is <b>conversations with decision-makers we had never managed to reach</b> through LinkedIn or calls.”', t3_n: 'Cristóbal Pardi', t3_r: 'SOLYN client',
+    why_label: 'Why SOLYN', why_h: 'Why teams <span class="muted">choose SOLYN.</span>',
+    why_1_t: 'A person on your campaign every business day', why_1_d: 'A real human reviews and adjusts your campaign each business day.',
+    why_2_t: 'Every client\'s lessons, in yours', why_2_d: 'We send email for many clients at once and test tools constantly. Each month, what works best goes into your campaigns automatically.',
+    why_3_t: 'Your domains, protected', why_3_d: 'Each inbox sends a randomized 1 to 5 emails a day with auto-healing, up to 6 copy variants per step and 10 subject lines.',
+    how_label: 'How it works', how_h: 'Three steps. <span class="muted">One result.</span>',
+    how_1_t: 'Talk to SOLYN', how_1_d: 'Tell us who you sell to.',
+    how_2_t: 'We build it', how_2_d: 'Your list by title, company size and industry, the copy, and protected inboxes.',
+    how_3_t: 'Replies come in', how_3_d: 'Positive replies and meetings, with a human reviewing your campaign every business day.',
+    more_label: 'Clients', more_h: 'From our <span class="muted">25+ customers.</span>',
+    t4_q: '“Testimonial about the channel: email is still one of the most powerful channels to grow, but you need <b>real experts</b> to make it work. SOLYN is that partner.”', t4_n: 'First Last', t4_r: 'Role, Company',
+    t5_q: '“Comparative testimonial: of all the outreach companies we tried, <b>SOLYN has been the best</b>. Results, transparency, communication.”', t5_n: 'First Last', t5_r: 'Role, Company',
+    t6_q: '“Testimonial about quality: the team is <b>responsive, professional</b> and understands how to reach the right audience.”', t6_n: 'First Last', t6_r: 'Role, Company',
+    t7_q: '“Testimonial about consistency: they deliver <b>high-quality appointments consistently</b>. A pleasure to work with the whole team.”', t7_n: 'First Last', t7_r: 'Role, Company',
+    audit_ghost: 'Audit', audit_label: 'The lead gen audit', audit_h: 'Already working with <em>a vendor?</em>',
+    audit_sub: 'Ask your lead gen vendor these 6 questions. Whether you work with one today or you\'re vetting a new one, the answers tell you a lot.',
+    audit: [
+      ['Does each inbox send a randomized 1 to 5 emails a day, varied daily, with auto-healing built in?', '<b>Fail:</b> if not, they\'re risking your domains. More than 5 per inbox per day, fixed daily volume, or no auto-healing puts deliverability at risk.'],
+      ['How many copy variants do you run per step in each campaign?', '<b>Fail:</b> a single variant never learns. Without several versions per step there is no way to know which message converts.'],
+      ['Is my bounce rate below 1%?', '<b>Fail:</b> high bounces mean unverified lists, and every bounce hurts your domain reputation.'],
+      ['Did you warm up every inbox for at least 3 weeks before launch?', '<b>Fail:</b> a new inbox that sends at full volume lands in spam. Warm-up is not optional.'],
+      ['Do you adjust the copy every 48 hours based on performance?', '<b>Fail:</b> copy left untouched for weeks decays. Campaigns that work get corrected continuously.'],
+      ['Does a human copy expert review my campaign every day?', '<b>Fail:</b> unsupervised automation repeats mistakes at scale. Someone has to look at the campaign every day.'],
+    ],
+    audit_close_t: 'Failed even one? You deserve better.', audit_close_d: 'These aren\'t nice-to-haves: they\'re the baseline for cold email that actually lands.', audit_cta: 'Get a free audit',
+    final_label: 'Ready?', final_h: 'Your next meetings<br>start with <em>one call.</em>', final_sub: 'Tell us who you want to reach. We\'ll show you how we\'d reach them.', final_cta: 'Book demo',
+    news_h: 'Newsletter', news_ph: 'Your email', news_btn: 'Subscribe', news_legal: 'By subscribing you accept the <a href="privacidad.html">privacy policy</a>.', f_privacy: 'Privacy policy',
+    footer_desc: 'Done-for-you cold email. Positive replies from the exact buyers you want, and meetings on your calendar week after week.',
+    f_quick: 'Navigate', f_q1: 'Solutions', f_q1b: 'How it works', f_q2: 'Vendor audit', f_q3: 'Work with us',
+    f_start: 'Get started', f_s1: 'Book demo', f_s2: 'Watch the video', f_s3: 'Email us',
+    lm_pill: 'Free instant download', lm_title: 'The 2026 <em>Cold Email</em> Playbook for Small Business', lm_sub: '25 pages of strategies, templates & benchmarks',
+    lm_f1: 'First name', lm_f2: 'Last name', lm_f3: 'Email', lm_f4: 'Phone', lm_p1: 'John', lm_p2: 'Doe', lm_p3: 'john@company.com', lm_p4: '+1 (555) 123-4567',
+    lm_btn: 'Download the Playbook', lm_sending: 'Sending…', lm_foot: 'No spam. By downloading you accept our <a href="privacidad.html" target="_blank">privacy policy</a>.',
+    lm_done_t: 'Done! Your playbook <em>is downloading.</em>', lm_done_d: 'If the download didn\'t start, tap the button. And if you\'d rather have us do it for you, book a 30-minute demo.',
+    lm_done_btn: 'Download again', lm_done_cal: 'Book a demo →', lm_fab: 'Free playbook', lm_err: 'Please fill this in', lm_err_mail: 'Check the email',
+    news_ok: 'Done! You\'re on the newsletter.',
+    copy: '© 2026 SOLYN — All rights reserved',
+  },
+};
+const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isMobile = window.innerWidth < 900;
+function detectLang() {
+  try { const s = localStorage.getItem('solyn_lang'); if (s === 'en' || s === 'es') return s; } catch (e) {}
+  try { const l = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']); if (l.some(x => String(x).toLowerCase().startsWith('es'))) return 'es'; } catch (e) {}
+  return 'en';
+}
+let lang = detectLang(); let split = null;
+function apply() {
+  const d = I18N[lang];
+  document.documentElement.lang = lang;
+  if (split) { split.revert(); split = null; }
+  document.querySelectorAll('[data-i]').forEach(el => { el.innerHTML = d[el.dataset.i] ?? el.dataset.i; });
+  document.querySelectorAll('[data-ph-i]').forEach(el => { el.placeholder = d[el.dataset.phI]; });
+  document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
+  document.getElementById('mtrack').innerHTML = [0, 1].map(() => d.marquee.map(x => `<span>${x} <i>✦</i></span>`).join('')).join('');
+  const lt = document.getElementById('logotrack'); if (lt) lt.innerHTML = [...d.logos, ...d.logos].map(x => `<span>${x}</span>`).join('');
+  document.getElementById('acc').innerHTML = d.audit.map((it, i) => `<div class="it${i === 0 ? ' open' : ''}"><button aria-expanded="${i === 0}"><span class="n">0${i + 1}</span><span class="q">${it[0]}</span><span class="chev">+</span></button><div class="a"><p>${it[1]}</p></div></div>`).join('');
+  document.querySelectorAll('#acc button').forEach(b => b.addEventListener('click', () => { const it = b.parentElement; const open = it.classList.contains('open'); document.querySelectorAll('#acc .it').forEach(x => { x.classList.remove('open'); x.querySelector('button').setAttribute('aria-expanded', 'false'); }); if (!open) { it.classList.add('open'); b.setAttribute('aria-expanded', 'true'); } }));
+  document.title = lang === 'es' ? 'SOLYN | Convertimos el email en ingresos' : 'SOLYN | We turn email into revenue';
+  const dl = document.getElementById('lmdl'); dl.href = PDF[lang]; dl.setAttribute('download', PDF[lang].split('/').pop());
+  const v = document.getElementById('player'); const vc = document.getElementById('vcard');
+  vc.classList.remove('playing'); v.pause(); v.removeAttribute('src'); v.load(); v.dataset.src = `video/solyn-${lang}.mp4`; v.poster = `video/solyn-${lang}-poster.jpg`;
+  // hero headline: split + reveal (como el sitio original)
+  if (window.SplitType && window.gsap && !reduced) {
+    const h1 = document.getElementById('h1');
+    split = new SplitType(h1, { types: 'chars,words' });
+    gsap.fromTo(split.chars, { y: '110%', rotateX: -75, opacity: 0 }, { y: 0, rotateX: 0, opacity: 1, duration: 1.1, ease: 'expo.out', stagger: 0.025, delay: 0.2 });
   }
-  if (document.readyState === 'complete') boot(); else window.addEventListener('load', boot);
+}
+document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => { lang = b.dataset.lang; try { localStorage.setItem('solyn_lang', lang); } catch (e) {} apply(); }));
+apply();
+
+// ---- motion (portado del sitio original): Lenis + ScrollTrigger + tilt + magnético + marquee + parallax
+let lenis = null;
+if (window.gsap && window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+if (!reduced && window.Lenis) {
+  lenis = new Lenis({ duration: 1.15, easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), smoothWheel: true, smoothTouch: false });
+  if (window.ScrollTrigger) { lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0); }
+  else { const raf = t => { lenis.raf(t); requestAnimationFrame(raf); }; requestAnimationFrame(raf); }
+}
+function goTo(id) { const el = document.getElementById(id); if (!el) return; if (lenis) lenis.scrollTo(el, { offset: -80, duration: 1.3 }); else el.scrollIntoView({ behavior: 'smooth' }); }
+document.querySelectorAll('[data-go]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); goTo(a.dataset.go); }));
+// nav scrolled
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50), { passive: true });
+// reveals (con stagger)
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+// tilt 3D en tarjetas, magnético en botones
+if (!reduced && !isMobile) {
+  document.querySelectorAll('.tilt').forEach(el => {
+    el.addEventListener('mousemove', e => { const r = el.getBoundingClientRect(); const px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height; el.style.transform = `perspective(1000px) rotateX(${(0.5 - py) * 6}deg) rotateY(${(px - 0.5) * 6}deg) translateZ(10px)`; });
+    el.addEventListener('mouseleave', () => { el.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)'; });
+  });
+  if (window.gsap) document.querySelectorAll('.magnetic').forEach(el => {
+    el.addEventListener('mousemove', e => { const r = el.getBoundingClientRect(); gsap.to(el, { x: (e.clientX - (r.left + r.width / 2)) * 0.3, y: (e.clientY - (r.top + r.height / 2)) * 0.3, duration: 0.5, ease: 'power3.out' }); });
+    el.addEventListener('mouseleave', () => gsap.to(el, { x: 0, y: 0, duration: 0.6, ease: 'elastic.out(1, 0.4)' }));
+  });
+  const logo = document.querySelector('.nav .logo');
+  logo.addEventListener('mousemove', e => { const r = logo.getBoundingClientRect(); logo.style.transform = `perspective(1000px) rotateX(${(0.5 - (e.clientY - r.top) / r.height) * 12}deg) rotateY(${((e.clientX - r.left) / r.width - 0.5) * 12}deg)`; });
+  logo.addEventListener('mouseleave', () => { logo.style.transform = 'none'; });
+  logo.style.display = 'inline-block'; logo.style.transition = 'transform 0.3s cubic-bezier(.16,1,.3,1)';
+}
+// marquee reactivo al scroll (como el original)
+(function () {
+  if (reduced) return;
+  const track = document.getElementById('mtrack'); let base = 0.5, vel = 0, last = window.scrollY, x = 0;
+  const half = () => track.scrollWidth / 2;
+  window.addEventListener('scroll', () => { const c = window.scrollY; vel = Math.min(8, Math.abs(c - last) * 0.3); last = c; }, { passive: true });
+  const tick = () => { x -= base + vel; if (-x >= half()) x += half(); track.style.transform = `translateX(${x}px)`; vel *= 0.92; requestAnimationFrame(tick); };
+  tick();
 })();
+// parallax hero (fantasma + esfera) y fantasma de auditoría
+if (window.gsap && window.ScrollTrigger && !reduced) {
+  const hero = document.querySelector('.hero');
+  gsap.to('#ghost', { yPercent: -40, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
+  gsap.to('#sphere', { yPercent: 25, scale: 0.85, ease: 'none', scrollTrigger: { trigger: hero, start: 'top top', end: 'bottom top', scrub: true } });
+  gsap.to('#aghost', { xPercent: -8, yPercent: -10, ease: 'none', scrollTrigger: { trigger: '.audit', start: 'top bottom', end: 'bottom top', scrub: true } });
+  const fh = document.getElementById('finalh');
+  ScrollTrigger.create({ trigger: fh, start: 'top 80%', once: true, onEnter: () => { const sp = new SplitType(fh, { types: 'chars,words' }); gsap.fromTo(sp.chars, { y: '100%', opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: 'expo.out', stagger: 0.02 }); } });
+}
+// esfera 3D (sol) — desactivada en móvil y reduced motion, con fallback estático
+const sphereEl = document.getElementById('sphere');
+if (!reduced && !isMobile && window.THREE) { try { initSphere(sphereEl); } catch (e) { sphereEl.classList.add('no3d'); } } else { sphereEl.classList.add('no3d'); }
+// video
+document.getElementById('cover').addEventListener('click', () => { const v = document.getElementById('player'); document.getElementById('vcard').classList.add('playing'); v.src = v.dataset.src; v.muted = false; v.play().catch(() => {}); });
+document.getElementById('player').addEventListener('ended', () => { document.getElementById('vcard').classList.remove('playing'); });
+// ---- Leads: a dónde van los datos ----------------------------------------------------
+// Los datos van por POST (JSON) a LEADS.url: hoy es el Apps Script "SOLYN Leads" que guarda cada lead en la planilla
+// "SOLYN — Leads" (Google Drive de Juan) y manda un email a info.solyn@gmail.com. El código del script está en leads-apps-script.gs.
+// También acepta un Google Form (URL terminada en /formResponse + IDs entry.xxx en LEADS.map) o cualquier API que reciba JSON.
+const LEADS = {
+  // Apps Script "SOLYN Leads" (cuenta de Juan) → planilla "SOLYN — Leads" + email a info.solyn@gmail.com por cada lead
+  url: 'https://script.google.com/macros/s/AKfycbwWSt7RCO0mLikXe8Z3T0hmL1CzS04pNWUuoxtni_1NTiw7snRQ3_yYeybIpItYL3noBw/exec',
+  map: { nombre: '', apellido: '', email: '', telefono: '', source: '', lang: '', page: '' }, // solo se usa si url es un Google Form (/formResponse)
+};
+const LS = { get: k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+async function sendLead(data) {
+  data = Object.assign({ lang, page: location.href, ts: new Date().toISOString() }, data);
+  if (!LEADS.url) { const q = LS.get('solyn_leads_q') || []; q.push(data); LS.set('solyn_leads_q', q.slice(-20)); return false; }
+  try {
+    if (/formResponse/.test(LEADS.url)) {
+      const body = new URLSearchParams();
+      Object.keys(LEADS.map).forEach(k => { if (LEADS.map[k] && data[k] != null) body.append(LEADS.map[k], String(data[k])); });
+      await fetch(LEADS.url, { method: 'POST', mode: 'no-cors', body });
+      return true;
+    }
+    const r = await fetch(LEADS.url, { method: 'POST', body: JSON.stringify(data) });
+    return r.ok;
+  } catch (e) {
+    try { await fetch(LEADS.url, { method: 'POST', mode: 'no-cors', body: JSON.stringify(data) }); return true; } catch (_) { return false; }
+  }
+}
+// reintento de leads que quedaron en cola (si el endpoint no estaba configurado o no había conexión)
+(async () => { if (!LEADS.url) return; const q = LS.get('solyn_leads_q') || []; if (!q.length) return; LS.set('solyn_leads_q', []); for (const d of q) await sendLead(d); })();
+
+// ---- Popup del Playbook --------------------------------------------------------------
+const lm = document.getElementById('lm'), lmfab = document.getElementById('lmfab'), lmform = document.getElementById('lmform');
+let lmShown = false;
+function lmOpen() { lm.classList.add('on'); lm.setAttribute('aria-hidden', 'false'); lmShown = true; lmfab.classList.remove('on'); if (lenis) lenis.stop(); document.body.style.overflow = 'hidden'; setTimeout(() => { const f = lmform.querySelector('input'); if (f && window.innerWidth > 900) f.focus(); }, 400); }
+function lmClose() { lm.classList.remove('on'); lm.setAttribute('aria-hidden', 'true'); if (lenis) lenis.start(); document.body.style.overflow = ''; const st = LS.get('solyn_pb') || {}; if (!st.done) LS.set('solyn_pb', { closed: Date.now() }); setTimeout(() => lmfab.classList.add('on'), 600); }
+document.getElementById('lmx').addEventListener('click', lmClose);
+document.getElementById('lmback').addEventListener('click', lmClose);
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && lm.classList.contains('on')) lmClose(); });
+lmfab.addEventListener('click', lmOpen);
+(function autoShow() {
+  const st = LS.get('solyn_pb') || {};
+  if (new URLSearchParams(location.search).has('playbook')) { setTimeout(lmOpen, 600); return; }
+  if (st.done || (st.closed && Date.now() - st.closed < 3 * 864e5)) { setTimeout(() => lmfab.classList.add('on'), 1500); return; }
+  let fired = false; const fire = () => { if (fired || lmShown) return; fired = true; if (document.getElementById('vcard').classList.contains('playing')) { setTimeout(() => lmfab.classList.add('on'), 500); return; } lmOpen(); };
+  const t = setTimeout(fire, 9000);
+  const onScroll = () => { if (window.scrollY > window.innerHeight * 0.35) { clearTimeout(t); window.removeEventListener('scroll', onScroll); setTimeout(fire, 400); } };
+  window.addEventListener('scroll', onScroll, { passive: true });
+})();
+function triggerDownload() { const a = document.getElementById('lmdl'); const tmp = document.createElement('a'); tmp.href = a.href; tmp.download = a.getAttribute('download'); document.body.appendChild(tmp); tmp.click(); tmp.remove(); }
+lmform.addEventListener('submit', async e => {
+  e.preventDefault(); const d = I18N[lang]; let ok = true; const data = {};
+  lmform.querySelectorAll('input').forEach(i => { i.classList.remove('err'); i.removeAttribute('title'); const v = i.value.trim(); data[i.name] = v; let bad = !v; if (i.name === 'email' && v && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) bad = true; if (i.name === 'telefono' && v && v.replace(/\D/g, '').length < 6) bad = true; if (bad) { ok = false; i.classList.add('err'); i.title = i.name === 'email' ? d.lm_err_mail : d.lm_err; } });
+  if (!ok) { lmform.querySelector('.err').focus(); return; }
+  const btn = document.getElementById('lmsubmit'); btn.disabled = true; btn.firstElementChild.textContent = d.lm_sending;
+  await Promise.race([sendLead(Object.assign({ source: 'playbook' }, data)), new Promise(r => setTimeout(r, 3500))]);
+  LS.set('solyn_pb', { done: Date.now(), email: data.email });
+  document.getElementById('lmmain').hidden = true; document.getElementById('lmdone').hidden = false;
+  triggerDownload();
+  btn.disabled = false; btn.firstElementChild.textContent = d.lm_btn;
+});
+// newsletter → misma base de datos (source: newsletter)
+document.getElementById('newsform').addEventListener('submit', async e => {
+  e.preventDefault(); const f = e.target; const m = document.getElementById('newsmail').value.trim(); if (!m) return; const b = f.querySelector('button'); b.disabled = true;
+  await Promise.race([sendLead({ email: m, source: 'newsletter' }), new Promise(r => setTimeout(r, 3500))]);
+  b.disabled = false; f.reset(); let ok = f.parentElement.querySelector('.ok'); if (!ok) { ok = document.createElement('p'); ok.className = 'ok'; f.parentElement.appendChild(ok); } ok.textContent = I18N[lang].news_ok;
+});
 </script>
 </body>
 </html>
