@@ -344,14 +344,8 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
     </div>
   </section>
 
-  <section class="logos" id="clients">
-    <div class="container">
-      <h2 data-i="logos_h"></h2>
-      <div class="logowall placeholder" data-ph="placeholder: logos reales"><div class="track" id="logotrack"></div></div>
-    </div>
-  </section>
 
-  <section class="testi">
+  <section class="testi" id="clients">
     <div class="container">
       <span class="label" data-i="testi_label"></span>
       <div class="featured rv">
@@ -613,7 +607,7 @@ function apply() {
   document.querySelectorAll('[data-ph-i]').forEach(el => { el.placeholder = d[el.dataset.phI]; });
   document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
   document.getElementById('mtrack').innerHTML = [0, 1].map(() => d.marquee.map(x => `<span>${x} <i>✦</i></span>`).join('')).join('');
-  document.getElementById('logotrack').innerHTML = [...d.logos, ...d.logos].map(x => `<span>${x}</span>`).join('');
+  const lt = document.getElementById('logotrack'); if (lt) lt.innerHTML = [...d.logos, ...d.logos].map(x => `<span>${x}</span>`).join('');
   document.getElementById('acc').innerHTML = d.audit.map((it, i) => `<div class="it${i === 0 ? ' open' : ''}"><button aria-expanded="${i === 0}"><span class="n">0${i + 1}</span><span class="q">${it[0]}</span><span class="chev">+</span></button><div class="a"><p>${it[1]}</p></div></div>`).join('');
   document.querySelectorAll('#acc button').forEach(b => b.addEventListener('click', () => { const it = b.parentElement; const open = it.classList.contains('open'); document.querySelectorAll('#acc .it').forEach(x => { x.classList.remove('open'); x.querySelector('button').setAttribute('aria-expanded', 'false'); }); if (!open) { it.classList.add('open'); b.setAttribute('aria-expanded', 'true'); } }));
   document.title = lang === 'es' ? 'SOLYN | Convertimos el email en ingresos' : 'SOLYN | We turn email into revenue';
