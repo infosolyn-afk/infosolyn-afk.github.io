@@ -4,12 +4,14 @@
 // y pegala en LEADS.url dentro de index.html.
 
 const SHEET_NAME = 'Leads';
-const NOTIFY_EMAIL = 'info.solyn@gmail.com'; // dejá '' si no querés aviso por email
+const NOTIFY_EMAIL = 'info.solyn@gmail.com'; // dejá '' si no querés aviso por email (podés poner varios separados por coma)
+const TZ = 'America/Argentina/Buenos_Aires';
 
 function doPost(e) {
   try {
     const d = parse_(e);
     const ss = SpreadsheetApp.getActiveSpreadsheet();
+    if (ss.getSpreadsheetTimeZone() !== TZ) ss.setSpreadsheetTimeZone(TZ);
     let sh = ss.getSheetByName(SHEET_NAME);
     if (!sh) {
       sh = ss.insertSheet(SHEET_NAME);
@@ -17,7 +19,9 @@ function doPost(e) {
       sh.setFrozenRows(1);
       sh.getRange('E:E').setNumberFormat('@');
     }
+    sh.getRange(1, 1, 1, 8).setFontWeight('bold');
     const row = sh.getLastRow() + 1;
+    sh.getRange(row, 1).setNumberFormat('dd/MM/yyyy HH:mm:ss');
     sh.getRange(row, 5).setNumberFormat('@'); // teléfono como texto (evita que "+54..." se lea como fórmula)
     sh.getRange(row, 1, 1, 8).setValues([[new Date(), d.nombre || '', d.apellido || '', d.email || '', String(d.telefono || ''), d.source || 'web', d.lang || '', d.page || '']]);
     if (NOTIFY_EMAIL) {
