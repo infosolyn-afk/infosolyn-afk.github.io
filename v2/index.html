@@ -231,6 +231,7 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
 .fcols li a { font-family: var(--body); font-weight: 400; font-size: 14px; color: rgba(245,241,234,0.7); transition: color 180ms; }
 .fcols li a:hover { color: var(--accent); }
 .fbottom .legal { color: rgba(245,241,234,0.5); transition: color 180ms; } .fbottom .legal:hover { color: var(--accent); }
+footer .lang { color: rgba(245,241,234,0.55); } footer .lang button:hover { color: var(--cream); }
 .fbottom { padding-top: 32px; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; font-family: var(--mono); font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(245,241,234,0.5); }
 
 @media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } .logowall .track { animation: none; } .final .glow { animation: none; } }
@@ -240,14 +241,14 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
   section { padding: 90px 0; }
   .nav { padding: 12px 20px; } .nav .links, .nav .divider { display: none; }
   .hero { padding-top: 100px; }
-  .sphere { width: 210px; height: 210px; top: 36px; right: -50px; opacity: 0.6; }
+  .sphere { width: 200px; height: 200px; top: -30px; right: -70px; opacity: 0.5; }
   .hero .ctacol { align-items: flex-start; } .hero .note { text-align: left; }
   .proof { grid-template-columns: 1fr; }
   .vcard .cover { gap: 14px; } .play { width: 76px; height: 76px; } .avatars .av { width: 40px; height: 40px; font-size: 11px; }
   .acc button { grid-template-columns: 32px 1fr 20px; padding: 20px 12px; } .acc button .q { font-size: 17px; } .acc .a p { padding: 0 12px 22px 12px; } .acc .it.open .a { max-height: 420px; }
   .audit .close { padding: 32px 24px; }
 }
-@media (max-width: 600px) { .proof { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .proof { grid-template-columns: 1fr; } .proof div { padding: 14px 18px; } .news input { font-size: 16px; } }
 
 /* lead magnet (popup + botón flotante) */
 .lm { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 350ms cubic-bezier(.16,1,.3,1); }
@@ -267,7 +268,7 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
 .lm-form .r2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .lm-form label { display: block; font-family: var(--body); font-weight: 600; font-size: 13px; margin-bottom: 14px; color: var(--cream); }
 .lm-form label i { color: var(--accent); font-style: normal; }
-.lm-form input { display: block; width: 100%; margin-top: 6px; height: 48px; border-radius: 6px; border: 1px solid rgba(245,241,234,0.16); background: rgba(245,241,234,0.05); color: var(--cream); padding: 0 14px; font: inherit; font-weight: 400; font-size: 15px; transition: border-color 180ms, background 180ms; }
+.lm-form input { display: block; width: 100%; margin-top: 6px; height: 48px; border-radius: 6px; border: 1px solid rgba(245,241,234,0.16); background: rgba(245,241,234,0.05); color: var(--cream); padding: 0 14px; font: inherit; font-weight: 400; font-size: 16px; transition: border-color 180ms, background 180ms; }
 .lm-form input::placeholder { color: rgba(245,241,234,0.35); }
 .lm-form input:focus { outline: 0; border-color: var(--accent); background: rgba(242,107,31,0.06); }
 .lm-form input.err { border-color: #E5484D; }
@@ -287,7 +288,7 @@ footer { background: var(--dark); color: var(--cream); padding: 80px 0 40px; bor
 .lm-fab i { width: 28px; height: 28px; border-radius: 50%; background: var(--accent); display: inline-flex; align-items: center; justify-content: center; color: var(--ink); font-style: normal; }
 .lm-fab i svg { width: 14px; height: 14px; }
 .news .ok { font-family: var(--mono); font-size: 12px; color: var(--accent); margin: 10px 0 0; letter-spacing: 1px; }
-@media (max-width: 600px) { .lm-card { padding: 26px 22px 22px; } .lm-form .r2 { grid-template-columns: 1fr; gap: 0; } .lm-head { flex-wrap: wrap; } .lm-fab { left: 12px; bottom: 12px; padding: 10px 14px 10px 10px; font-size: 10px; } }
+@media (max-width: 600px) { .lm { padding: 12px; } .lm-card { padding: 20px 18px 16px; border-radius: 14px; max-height: calc(100vh - 24px); } .lm-form .r2 { grid-template-columns: 1fr; gap: 0; } .lm-ico { display: none; } .lm-head { margin-bottom: 12px; } .lm-pill { font-size: 10px; padding: 8px 12px; } .lm-card h3 { font-size: 30px; } .lm-sub { font-size: 11px; margin-bottom: 14px; } .lm-form label { margin-bottom: 10px; font-size: 12.5px; } .lm-form input { height: 42px; margin-top: 5px; } .lm-btn { height: 50px; font-size: 15px; } .lm-foot { font-size: 11px; margin-top: 10px; } .lm-x { top: 10px; right: 10px; width: 34px; height: 34px; } .lm-fab { left: 12px; bottom: 12px; padding: 10px 14px 10px 10px; font-size: 10px; } }
 </style>
 </head>
 <body>
