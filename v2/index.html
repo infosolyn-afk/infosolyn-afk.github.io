@@ -3,337 +3,527 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SOLYN — Reuniones calificadas en tu calendario</title>
-<meta name="description" content="Captación de clientes B2B por resultados. Identificamos, contactamos y calificamos a tus clientes ideales, y te los agendamos. No pagás nada hasta que entregamos.">
+<title>SOLYN | Convertimos el email en ingresos</title>
+<meta name="description" content="Cold email hecho por nosotros. Respuestas positivas de los compradores exactos que querés, y reuniones en tu calendario semana tras semana.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#F5F1EA">
-<meta property="og:title" content="SOLYN — Reuniones calificadas en tu calendario">
-<meta property="og:description" content="Captación de clientes B2B por resultados. No pagás nada hasta que entregamos reuniones calificadas.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="SOLYN | Convertimos el email en ingresos">
+<meta property="og:description" content="Cold email hecho por nosotros. Respuestas positivas y reuniones en tu calendario, semana tras semana.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="video/solyn-es-poster.jpg">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<style>/* latin-ext */
-@font-face {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/bebas-neue-400-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/bebas-neue-400-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("fonts/dm-mono-300-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("fonts/dm-mono-300-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/dm-mono-400-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/dm-mono-400-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/dm-mono-500-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'DM Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/dm-mono-500-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* greek */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/syne-greek.woff2") format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/syne-latin-ext.woff2") format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url("fonts/syne-latin.woff2") format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style>
-<style>/* SOLYN — Light mode tokens. Anaranjado SOLYN como acento, dark inversa para Guarantee. */
-:root {
-  --bg-primary: #F5F1EA;        /* cream base — saca lo naranja del logo */
-  --surface-1: #ECE6DB;
-  --surface-2: #E2DACB;
-  --border: #1A1715;
-  --border-soft: rgba(26,23,21,0.12);
-
-  --text-primary: #1A1715;
-  --text-secondary: #5C544C;
-  --text-muted: #8C8278;
-
-  --accent: #F26B1F;            /* naranja SOLYN principal */
-  --accent-hot: #FF8A1F;        /* highlight más cálido */
-  --accent-deep: #C44A0F;       /* sombra del sol */
-
-  /* Inverso para sección Guarantee */
-  --bg-inverse: #1A1715;
-  --text-inverse: #F5F1EA;
-
-  --font-display: 'Bebas Neue', Impact, sans-serif;
-  --font-body: 'Syne', 'Helvetica Neue', sans-serif;
-  --font-mono: 'DM Mono', 'Courier New', monospace;
-}
-</style>
 <style>
-* { box-sizing: border-box; }
-html, body { margin: 0; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); font-weight: 300; font-size: 17px; line-height: 1.8; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-html { overflow-x: hidden; padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px); }
-body { overflow-x: clip; padding: 0; }
-img { max-width: none; }
-::selection { background: var(--accent); color: #F5F1EA; }
-a { color: inherit; text-decoration: none; }
-.reveal { opacity: 0; transform: translateY(32px); transition: opacity 850ms cubic-bezier(.16,1,.3,1), transform 850ms cubic-bezier(.16,1,.3,1); }
-.reveal.in { opacity: 1; transform: none; }
-@media (max-width: 900px) {
-  .nav-links { display: none !important; }
-  .sphere-wrap { width: 210px !important; height: 210px !important; top: 36px !important; right: -50px !important; opacity: 0.6; }
-  .cta-col { align-items: flex-start !important; flex-shrink: 1 !important; min-width: 0; max-width: 100%; }
-  .cta-note { text-align: left !important; }
-  .cta-row { flex-wrap: wrap !important; }
-  .grid-3, .grid-2, .proof-grid { grid-template-columns: 1fr !important; }
-  .acc-a { padding-left: 24px !important; }
-  section { padding-left: 24px !important; padding-right: 24px !important; }
-  nav { padding-left: 20px !important; padding-right: 20px !important; }
+/* Tipografías autoalojadas (mismas que EOC: Space Grotesk, Inter, Oswald) */
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/space-grotesk-latin-500-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/space-grotesk-latin-ext-500-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/space-grotesk-latin-600-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/space-grotesk-latin-ext-600-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/space-grotesk-latin-700-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Space Grotesk'; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/space-grotesk-latin-ext-700-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/inter-latin-400-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/inter-latin-ext-400-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/inter-latin-500-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/inter-latin-ext-500-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/inter-latin-600-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/inter-latin-ext-600-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/inter-latin-700-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url("fonts/inter-latin-ext-700-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/oswald-latin-400-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/oswald-latin-ext-400-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/oswald-latin-500-normal.woff2") format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Oswald'; font-style: normal; font-weight: 500; font-display: swap; src: url("fonts/oswald-latin-ext-500-normal.woff2") format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root {
+  --bg-0: #0a0a0a; --bg-1: #181410; --bg-2: #201b13;
+  --fg: #fafafa; --muted: #a6a6a6; --dim: #6b6b6b;
+  --accent: #F26B1F; --accent-hot: #FF8A1F; --accent-ink: #0a0a0a;
+  --card: rgba(18,18,18,0.4); --line: rgba(255,255,255,0.08); --line-2: rgba(255,255,255,0.14);
+  --head: 'Space Grotesk', sans-serif; --body: 'Inter', sans-serif; --label: 'Oswald', sans-serif;
+  --container: 1152px;
 }
-@media (max-width: 600px) {
-  .proof-grid { grid-template-columns: 1fr 1fr !important; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html, body { margin: 0; }
+body { background: var(--bg-0) linear-gradient(135deg, #0a0a0a 0%, #181410 50%, #201b13 100%) fixed; color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+html { overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.container { max-width: var(--container); margin: 0 auto; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+.accent { color: var(--accent); }
+.label { font-family: var(--label); font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { font-family: var(--head); margin: 0; }
+h2.big { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.1; text-align: center; }
+.sub { font-size: 20px; line-height: 1.6; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 56px; padding: 0 48px; border-radius: 6px; font-family: var(--body); font-weight: 700; font-size: 18px; letter-spacing: 0.05em; text-transform: uppercase; background: var(--accent); color: var(--accent-ink); border: 0; cursor: pointer; transition: transform 200ms ease, background 200ms ease, box-shadow 200ms ease; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1); white-space: nowrap; }
+.btn:hover { background: var(--accent-hot); transform: translateY(-1px); }
+.btn.outline { background: transparent; color: var(--accent); border: 1.6px solid var(--accent); height: 44px; padding: 0 40px; font-size: 16px; }
+.btn.outline:hover { background: rgba(242,107,31,0.1); }
+.btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line-2); height: 52px; padding: 0 28px; font-size: 16px; text-transform: none; letter-spacing: 0; font-weight: 600; }
+.btn.ghost:hover { background: rgba(255,255,255,0.05); }
+.textlink { color: var(--fg); font-weight: 600; font-size: 16px; }
+.textlink:hover { color: var(--accent); }
+.card { background: var(--card); border: 0.8px solid var(--line); border-radius: 16px; padding: 32px; }
+section { padding: 96px 0; }
+.placeholder { outline: 1px dashed rgba(242,107,31,0.35); outline-offset: 4px; position: relative; }
+.placeholder::after { content: attr(data-ph); position: absolute; top: -10px; right: 12px; font-family: var(--label); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); background: var(--bg-0); padding: 2px 8px; border-radius: 4px; }
+
+/* nav */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(10,10,10,0.8); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+.nav .in { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav .logo img { height: 34px; }
+.nav .links { display: flex; align-items: center; gap: 28px; }
+.nav .links a { font-size: 16px; font-weight: 500; color: var(--fg); opacity: 0.9; }
+.nav .links a:hover { color: var(--accent); opacity: 1; }
+.nav .right { display: flex; align-items: center; gap: 20px; }
+.lang { display: inline-flex; gap: 6px; font-family: var(--label); font-size: 12px; letter-spacing: 0.15em; color: var(--dim); }
+.lang button { background: none; border: 0; color: inherit; font: inherit; cursor: pointer; padding: 2px; }
+.lang button.on { color: var(--accent); cursor: default; }
+
+/* hero */
+.hero { padding: 168px 0 48px; text-align: center; position: relative; }
+.hero::before { content: ""; position: absolute; left: 50%; top: 40px; width: min(900px, 100vw); height: 520px; transform: translateX(-50%); background: radial-gradient(ellipse at center, rgba(242,107,31,0.14), transparent 62%); pointer-events: none; }
+.hero .in { position: relative; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.chip { display: inline-flex; align-items: center; padding: 6px 14px; border: 0.8px solid rgba(250,250,250,0.4); border-radius: 9999px; font-size: 16px; color: var(--fg); }
+.hero h1 { font-size: 96px; line-height: 1; font-weight: 700; letter-spacing: -0.025em; text-transform: uppercase; display: flex; flex-direction: column; align-items: center; }
+.hero h1 .l2 { color: var(--accent); position: relative; padding-bottom: 10px; }
+.hero h1 .l2::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--accent); border-radius: 2px; }
+.hero .sub { max-width: 640px; }
+.hero .ctas { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+.hero .note { font-size: 13px; color: var(--dim); }
+.proof { padding: 40px 0 24px; text-align: center; }
+.proof .line { font-weight: 600; font-size: 16px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.proof .line span.dot { color: var(--dim); }
+.badges { display: flex; justify-content: center; gap: 12px; margin-top: 22px; }
+.badge { width: 48px; height: 48px; border-radius: 10px; border: 1px solid var(--line-2); background: rgba(255,255,255,0.04); display: flex; align-items: center; justify-content: center; font-family: var(--label); font-size: 9px; letter-spacing: 0.1em; color: var(--dim); }
+.proof .cap { margin-top: 14px; font-size: 14px; color: var(--muted); }
+
+/* video */
+.vsl { padding: 64px 0 56px; text-align: center; }
+.vsl .label { margin-bottom: 22px; display: block; }
+.vcard { position: relative; max-width: 960px; margin: 0 auto; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; background: #0e0d0c; border: 1px solid var(--line); box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
+.vcard .cover { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; cursor: pointer; background: radial-gradient(ellipse at 50% 85%, rgba(242,107,31,0.35), rgba(242,107,31,0.08) 40%, transparent 65%), linear-gradient(180deg, #121110, #0b0a09); }
+.vcard .cover .brand { display: flex; align-items: center; gap: 10px; }
+.vcard .cover .brand img { height: 26px; opacity: 0.9; }
+.vcard .cover h3 { font-size: 44px; font-weight: 700; letter-spacing: -0.02em; }
+.play { width: 96px; height: 96px; border-radius: 50%; background: var(--accent); border: 0; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 16px rgba(242,107,31,0.14), 0 0 60px rgba(242,107,31,0.55); transition: transform 200ms ease; }
+.play:hover { transform: scale(1.06); }
+.play::after { content: ""; width: 0; height: 0; border-top: 16px solid transparent; border-bottom: 16px solid transparent; border-left: 26px solid var(--accent-ink); margin-left: 6px; }
+.avatars { display: flex; justify-content: center; margin-top: 10px; }
+.avatars .av { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--accent); background: linear-gradient(135deg, #2a2420, #3a3128); margin-left: -10px; display: flex; align-items: center; justify-content: center; font-family: var(--head); font-weight: 700; font-size: 14px; color: var(--muted); box-shadow: 0 0 0 2px #0e0d0c; }
+.avatars .av:first-child { margin-left: 0; }
+.vcard .cover .words { font-size: 16px; font-weight: 600; }
+.vcard video { position: absolute; inset: 0; width: 100%; height: 100%; display: none; background: #000; }
+.vcard.playing .cover { display: none; }
+.vcard.playing video { display: block; }
+.vsl .or { margin-top: 24px; font-size: 14px; color: var(--muted); }
+.vsl .or a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
+
+/* logos */
+.logos { padding: 56px 0 72px; text-align: center; }
+.logos h2 { font-size: 20px; font-weight: 500; letter-spacing: -0.01em; color: var(--muted); margin-bottom: 36px; }
+.marquee { overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent); }
+.marquee .track { display: flex; gap: 72px; width: max-content; animation: slide 28s linear infinite; }
+.marquee .track span { font-family: var(--head); font-weight: 700; font-size: 26px; color: #5a5a5a; white-space: nowrap; letter-spacing: -0.01em; }
+@keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* testimonials */
+.testi .label { text-align: center; display: block; margin-bottom: 36px; font-family: var(--label); text-transform: none; letter-spacing: 0; font-size: 16px; color: var(--fg); }
+.featured { max-width: 760px; margin: 0 auto; text-align: center; }
+.featured blockquote { margin: 0; font-family: var(--head); font-size: 30px; line-height: 1.35; font-weight: 500; letter-spacing: -0.01em; }
+.person { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 28px; }
+.person .av { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, #2a2420, #3a3128); border: 1px solid var(--line-2); display: flex; align-items: center; justify-content: center; font-family: var(--head); font-weight: 700; color: var(--muted); }
+.person .who { text-align: left; }
+.person .name { font-weight: 600; font-size: 16px; }
+.person .role { font-size: 14px; color: var(--muted); }
+.tgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
+.tcard { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.tcard p { margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted); }
+.tcard p b { color: var(--fg); font-weight: 600; }
+.tcard .person { justify-content: flex-start; margin-top: 0; }
+.tcard .person .av { width: 44px; height: 44px; }
+
+/* why */
+.why h2 { margin-bottom: 48px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.icon { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line-2); display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--fg); }
+.icon svg { width: 22px; height: 22px; }
+.why h3 { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.35; margin-bottom: 10px; }
+.why p { margin: 0; font-size: 18px; line-height: 1.55; color: var(--muted); }
+
+/* how */
+.how h2 { margin-bottom: 56px; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.step .num { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+.step .num .c { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line-2); display: flex; align-items: center; justify-content: center; font-family: var(--head); font-weight: 600; font-size: 18px; flex-shrink: 0; }
+.step .num .ln { flex: 1; height: 1px; background: var(--line-2); }
+.step h3 { font-size: 24px; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 10px; }
+.step p { margin: 0; font-size: 18px; line-height: 1.55; color: var(--muted); }
+
+/* audit */
+.audit { text-align: center; }
+.audit .label { display: block; margin-bottom: 18px; }
+.audit .sub { max-width: 640px; margin: 20px auto 0; }
+.acc { max-width: 760px; margin: 48px auto 0; text-align: left; display: flex; flex-direction: column; gap: 10px; }
+.acc .it { border: 1px solid var(--line); border-radius: 12px; background: var(--card); overflow: hidden; transition: border-color 200ms; }
+.acc .it.open { border-color: var(--line-2); background: rgba(255,255,255,0.03); }
+.acc button { width: 100%; background: none; border: 0; color: var(--fg); cursor: pointer; display: grid; grid-template-columns: 40px 1fr 24px; gap: 14px; align-items: center; padding: 20px 22px; text-align: left; font-family: var(--head); font-weight: 600; font-size: 18px; line-height: 1.35; }
+.acc button .n { font-family: var(--label); font-size: 13px; letter-spacing: 0.1em; color: var(--dim); }
+.acc button .chev { width: 24px; height: 24px; color: var(--muted); transition: transform 250ms; }
+.acc .it.open .chev { transform: rotate(180deg); }
+.acc .a { max-height: 0; overflow: hidden; transition: max-height 350ms ease; }
+.acc .a p { margin: 0; padding: 0 22px 22px 76px; font-size: 16px; line-height: 1.6; color: var(--muted); }
+.acc .a p b { color: var(--fg); }
+.acc .it.open .a { max-height: 240px; }
+.audit .close { max-width: 760px; margin: 28px auto 0; padding: 36px 32px; }
+.audit .close h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 10px; }
+.audit .close p { margin: 0 0 22px; color: var(--muted); font-size: 16px; }
+
+/* final cta */
+.final { padding: 32px 0 96px; }
+.final .card { max-width: 1024px; margin: 0 auto; padding: 72px 32px; text-align: center; }
+.final h2 { margin-bottom: 18px; }
+.final .sub { max-width: 600px; margin: 0 auto 32px; }
+.final .link { margin-top: 18px; font-size: 14px; color: var(--muted); }
+.final .link a { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
+
+/* footer */
+footer { border-top: 1px solid var(--line); padding: 64px 0 32px; }
+.news { padding-bottom: 40px; border-bottom: 1px solid var(--line); }
+.news h4 { font-family: var(--label); font-weight: 500; font-size: 18px; margin: 0 0 14px; }
+.news form { display: flex; gap: 10px; max-width: 420px; }
+.news input { flex: 1; height: 44px; border-radius: 6px; border: 1px solid var(--line-2); background: #0e0d0c; color: var(--fg); padding: 0 14px; font: inherit; font-size: 14px; }
+.news input::placeholder { color: var(--dim); }
+.news button { width: 44px; height: 44px; border-radius: 6px; border: 1px solid var(--line-2); background: #151312; color: var(--fg); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+.news button:hover { border-color: var(--accent); color: var(--accent); }
+.fcols { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 48px; padding: 40px 0; }
+.fcols img { height: 34px; margin-bottom: 16px; }
+.fcols .made { font-size: 14px; color: var(--muted); }
+.fcols .made span { color: var(--accent); }
+.fcols .li { display: inline-block; margin-top: 16px; color: var(--accent); font-weight: 600; font-size: 15px; }
+.fcols h5 { font-family: var(--body); font-size: 15px; font-weight: 700; margin: 0 0 14px; }
+.fcols ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.fcols li a { font-size: 14px; color: var(--muted); }
+.fcols li a:hover { color: var(--fg); }
+.fbottom { border-top: 1px solid var(--line); padding-top: 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+
+/* reveal */
+.rv { opacity: 0; transform: translateY(24px); transition: opacity 700ms ease, transform 700ms ease; }
+.rv.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } .marquee .track { animation: none; } }
+
+@media (max-width: 1024px) { .hero h1 { font-size: 72px; } .grid3, .steps { grid-template-columns: 1fr; } .tgrid { grid-template-columns: 1fr; } .fcols { grid-template-columns: 1fr; gap: 32px; } }
+@media (max-width: 720px) {
+  section { padding: 64px 0; }
+  .nav .links { display: none; }
+  .nav .in { height: 64px; }
+  .nav .btn.outline { padding: 0 18px; height: 40px; font-size: 13px; }
+  .hero { padding-top: 120px; }
+  .hero h1 { font-size: 48px; letter-spacing: -0.02em; }
+  .hero .sub { font-size: 18px; }
+  .btn { height: 52px; padding: 0 28px; font-size: 16px; }
+  h2.big { font-size: 34px; }
+  .vcard .cover h3 { font-size: 26px; }
+  .vcard .cover { gap: 14px; }
+  .play { width: 72px; height: 72px; }
+  .avatars .av { width: 40px; height: 40px; font-size: 12px; }
+  .featured blockquote { font-size: 22px; }
+  .acc button { grid-template-columns: 32px 1fr 20px; font-size: 16px; padding: 16px; }
+  .acc .a p { padding: 0 16px 16px 16px; }
+  .acc .it.open .a { max-height: 320px; }
+  .final .card { padding: 48px 20px; }
 }
 </style>
 </head>
 <body>
-<div id="app"></div>
-<script>window.__resources = { solynLogo: 'assets/solyn-logo.png', solynLogoLight: 'assets/solyn-logo-light.png' };</script>
-<script src="vendor/three.min.js?v=202611030128"></script>
-<script src="vendor/gsap.min.js?v=202611030128"></script>
-<script src="vendor/ScrollTrigger.min.js?v=202611030128"></script>
-<script src="vendor/split-type.min.js?v=202611030128"></script>
-<script src="vendor/lenis.min.js?v=202611030128"></script>
-<script src="vendor/react.development.js?v=202611030128"></script>
-<script src="vendor/react-dom.development.js?v=202611030128"></script>
-<script src="src/motion.js?v=202611030128"></script>
-<script src="src/i18n.js?v=202611030128"></script>
-<script src="src/Loader.js?v=202611030128"></script>
-<script src="src/HeroSphere.js?v=202611030128"></script>
-<script src="src/Nav.js?v=202611030128"></script>
-<script src="src/Hero.js?v=202611030128"></script>
-<script src="src/Marquee.js?v=202611030128"></script>
-<script src="src/VideoSection.js?v=202611030128"></script>
-<script src="src/Sections.js?v=202611030128"></script>
-<script src="src/Guarantee.js?v=202611030128"></script>
-<script src="src/Footer.js?v=202611030128"></script>
+
+<nav class="nav">
+  <div class="container in">
+    <a class="logo" href="#top"><img src="assets/solyn-logo-light.png" alt="SOLYN"></a>
+    <div class="links">
+      <a href="#why" data-i="nav_1"></a>
+      <a href="#how" data-i="nav_2"></a>
+      <a href="#clients" data-i="nav_3"></a>
+      <a href="#audit" data-i="nav_4"></a>
+    </div>
+    <div class="right">
+      <div class="lang" aria-label="Language"><button data-lang="en">EN</button><span>/</span><button data-lang="es">ES</button></div>
+      <a class="btn outline" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener" data-i="nav_cta"></a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="hero">
+    <div class="container in">
+      <span class="chip" data-i="hero_chip"></span>
+      <h1><span class="l1" data-i="hero_h1"></span><span class="l2" data-i="hero_h2"></span></h1>
+      <p class="sub" data-i="hero_sub"></p>
+      <div class="ctas">
+        <a class="btn" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener" data-i="hero_cta"></a>
+        <a class="textlink" href="#video" data-i="hero_video"></a>
+      </div>
+      <p class="note" data-i="hero_note"></p>
+    </div>
+  </section>
+
+  <div class="proof container">
+    <div class="line placeholder" data-ph="placeholder: números reales"><span data-i="proof_1"></span><span class="dot">·</span><span data-i="proof_2"></span><span class="dot">·</span><span data-i="proof_3"></span></div>
+    <div class="badges placeholder" data-ph="placeholder: certificaciones"><div class="badge">LOGO</div><div class="badge">LOGO</div><div class="badge">LOGO</div><div class="badge">LOGO</div><div class="badge">LOGO</div></div>
+    <p class="cap" data-i="proof_cap"></p>
+  </div>
+
+  <section class="vsl" id="video">
+    <div class="container">
+      <span class="label" data-i="video_label"></span>
+      <div class="vcard" id="vcard">
+        <div class="cover" id="cover" role="button" aria-label="Play">
+          <div class="brand"><img src="assets/solyn-logo-light.png" alt="SOLYN"></div>
+          <h3 data-i="video_h"></h3>
+          <button class="play" aria-label="Play"></button>
+          <div class="avatars placeholder" data-ph="placeholder: fotos de clientes"><div class="av">JP</div><div class="av">MR</div><div class="av">CL</div><div class="av">DF</div><div class="av">SA</div><div class="av">LR</div><div class="av">AG</div></div>
+          <div class="words" data-i="video_words"></div>
+        </div>
+        <video id="player" playsinline preload="none" controls></video>
+      </div>
+      <p class="or"><span data-i="video_or"></span> <a href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener">calendly.com/info-solyn/30min</a></p>
+    </div>
+  </section>
+
+  <section class="logos" id="clients">
+    <div class="container">
+      <h2 data-i="logos_h"></h2>
+      <div class="marquee placeholder" data-ph="placeholder: logos reales">
+        <div class="track" id="logotrack"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi">
+    <div class="container">
+      <span class="label" data-i="testi_label"></span>
+      <div class="featured rv placeholder" data-ph="placeholder: testimonio real">
+        <blockquote data-i="t1_q"></blockquote>
+        <div class="person"><div class="av">LA</div><div class="who"><div class="name" data-i="t1_n"></div><div class="role" data-i="t1_r"></div></div></div>
+      </div>
+      <div class="tgrid">
+        <div class="card tcard rv placeholder" data-ph="placeholder"><p data-i="t2_q"></p><div class="person"><div class="av">MK</div><div class="who"><div class="name" data-i="t2_n"></div><div class="role" data-i="t2_r"></div></div></div></div>
+        <div class="card tcard rv placeholder" data-ph="placeholder"><p data-i="t3_q"></p><div class="person"><div class="av">KP</div><div class="who"><div class="name" data-i="t3_n"></div><div class="role" data-i="t3_r"></div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="why">
+    <div class="container">
+      <h2 class="big" data-i="why_h"></h2>
+      <div class="grid3">
+        <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-7 7-7s7 3 7 7"/><path d="m16 11 2 2 4-4"/></svg></div><h3 data-i="why_1_t"></h3><p data-i="why_1_d"></p></div>
+        <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div><h3 data-i="why_2_t"></h3><p data-i="why_2_d"></p></div>
+        <div class="card rv"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div><h3 data-i="why_3_t"></h3><p data-i="why_3_d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="big" data-i="how_h"></h2>
+      <div class="steps">
+        <div class="step rv"><div class="num"><div class="c">1</div><div class="ln"></div></div><h3 data-i="how_1_t"></h3><p data-i="how_1_d"></p></div>
+        <div class="step rv"><div class="num"><div class="c">2</div><div class="ln"></div></div><h3 data-i="how_2_t"></h3><p data-i="how_2_d"></p></div>
+        <div class="step rv"><div class="num"><div class="c">3</div></div><h3 data-i="how_3_t"></h3><p data-i="how_3_d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi more">
+    <div class="container">
+      <h2 class="big" data-i="more_h" style="margin-bottom:48px"></h2>
+      <div class="tgrid" style="margin-top:0">
+        <div class="card tcard rv placeholder" data-ph="placeholder"><p data-i="t4_q"></p><div class="person"><div class="av">DM</div><div class="who"><div class="name" data-i="t4_n"></div><div class="role" data-i="t4_r"></div></div></div></div>
+        <div class="card tcard rv placeholder" data-ph="placeholder"><p data-i="t5_q"></p><div class="person"><div class="av">SM</div><div class="who"><div class="name" data-i="t5_n"></div><div class="role" data-i="t5_r"></div></div></div></div>
+        <div class="card tcard rv placeholder" data-ph="placeholder"><p data-i="t6_q"></p><div class="person"><div class="av">TP</div><div class="who"><div class="name" data-i="t6_n"></div><div class="role" data-i="t6_r"></div></div></div></div>
+        <div class="card tcard rv placeholder" data-ph="placeholder"><p data-i="t7_q"></p><div class="person"><div class="av">AG</div><div class="who"><div class="name" data-i="t7_n"></div><div class="role" data-i="t7_r"></div></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="audit" id="audit">
+    <div class="container">
+      <span class="label" data-i="audit_label"></span>
+      <h2 class="big" data-i="audit_h"></h2>
+      <p class="sub" data-i="audit_sub"></p>
+      <div class="acc" id="acc"></div>
+      <div class="card close rv">
+        <h3 data-i="audit_close_t"></h3>
+        <p data-i="audit_close_d"></p>
+        <a class="btn ghost" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener"><span data-i="audit_cta"></span> →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="container">
+      <div class="card rv">
+        <h2 class="big" data-i="final_h"></h2>
+        <p class="sub" data-i="final_sub"></p>
+        <a class="btn" href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener" data-i="final_cta"></a>
+        <p class="link"><a href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener">calendly.com/info-solyn/30min</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="news">
+      <h4 data-i="news_h"></h4>
+      <form id="newsform"><input type="email" id="newsmail" required data-ph-i="news_ph"><button type="submit" aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg></button></form>
+    </div>
+    <div class="fcols">
+      <div>
+        <img src="assets/solyn-logo-light.png" alt="SOLYN">
+        <div class="made" data-i="made"></div>
+        <a class="li" href="mailto:info.solyn@gmail.com" data-i="footer_contact"></a>
+      </div>
+      <div>
+        <h5 data-i="f_quick"></h5>
+        <ul><li><a href="#why" data-i="f_q1"></a></li><li><a href="#audit" data-i="f_q2"></a></li><li><a href="mailto:info.solyn@gmail.com" data-i="f_q3"></a></li></ul>
+      </div>
+      <div>
+        <h5 data-i="f_start"></h5>
+        <ul><li><a href="https://calendly.com/info-solyn/30min" target="_blank" rel="noopener" data-i="f_s1"></a></li><li><a href="#video" data-i="f_s2"></a></li></ul>
+      </div>
+    </div>
+    <div class="fbottom"><span data-i="copy"></span><span>info.solyn@gmail.com</span></div>
+  </div>
+</footer>
+
 <script>
-(function () {
-  function boot() {
-    "use strict";
-    
-    function App() {
-      React.useEffect(function () {
-        SOLYN_MOTION.init();
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (e) {
-            if (e.isIntersecting) e.target.classList.add('in');
-          });
-        }, {
-          threshold: 0.12
-        });
-        document.querySelectorAll('.reveal').forEach(function (el) {
-          return io.observe(el);
-        });
-        return function () {
-          return io.disconnect();
-        };
-      }, []);
-      return /*#__PURE__*/React.createElement(SolynLangProvider, null, /*#__PURE__*/React.createElement(Loader, null), /*#__PURE__*/React.createElement(Nav, null), /*#__PURE__*/React.createElement("main", null, /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(Marquee, null), /*#__PURE__*/React.createElement(VideoSection, null), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(HowItWorks, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(Why, null)), /*#__PURE__*/React.createElement("div", {
-        id: "guarantee",
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(Guarantee, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(Audit, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(FAQ, null)), /*#__PURE__*/React.createElement("div", {
-        className: "reveal"
-      }, /*#__PURE__*/React.createElement(CTA, null))), /*#__PURE__*/React.createElement(Footer, null));
-    }
-    ReactDOM.createRoot(document.getElementById('app')).render(/*#__PURE__*/React.createElement(App, null));
-  }
-  if (document.readyState === 'complete') boot(); else window.addEventListener('load', boot);
-})();
+const CAL = 'https://calendly.com/info-solyn/30min';
+const I18N = {
+  es: {
+    nav_1: 'Soluciones', nav_2: 'Cómo funciona', nav_3: 'Clientes', nav_4: 'Auditoría', nav_cta: 'Agendar demo',
+    hero_chip: 'Cold email hecho por nosotros', hero_h1: 'Convertimos el email', hero_h2: 'en ingresos',
+    hero_sub: 'Respuestas positivas de los compradores exactos que querés, y reuniones en tu calendario semana tras semana.',
+    hero_cta: 'Agendar demo', hero_video: 'Mirá el video de 2 minutos ↓', hero_note: 'Contale a Juan a quién le vendés. Te muestra cómo lo alcanzaríamos.',
+    proof_1: '[X]+ reuniones agendadas para clientes', proof_2: '[X]+ clientes', proof_3: 'Trabajamos con [marca]',
+    proof_cap: 'Reconocidos como expertos por las herramientas que usamos [placeholder]',
+    video_label: 'Mirá: cómo SOLYN agenda reuniones (1:33)', video_h: 'Cómo agendamos reuniones <span class="accent">para vos</span>',
+    video_words: 'En palabras de nuestros clientes · <span class="accent">[Empresa], [Empresa], [Empresa]</span> y más', video_or: 'o agendá con Juan directo:',
+    logos_h: 'Clientes que conseguimos para nuestros clientes',
+    logos: ['Marca 01', 'Marca 02', 'Marca 03', 'Marca 04', 'Marca 05', 'Marca 06', 'Marca 07', 'Marca 08'],
+    testi_label: 'Lo que dicen nuestros clientes',
+    t1_q: '“Testimonio destacado del cliente: una frase corta y concreta sobre el resultado y la relación de trabajo con SOLYN.”', t1_n: 'Nombre Apellido', t1_r: 'Cargo, Empresa',
+    t2_q: '“Testimonio con un resultado medible: <b>el primer mes tuve [X] reuniones nuevas</b>. El equipo revisa la campaña varias veces por mes y no se pierde ninguna oportunidad.”', t2_n: 'Nombre Apellido', t2_r: 'Cargo, Empresa',
+    t3_q: '“Testimonio sobre la relación: <b>cada semana ganamos algo estratégico</b> trabajando con el equipo de SOLYN.”', t3_n: 'Nombre Apellido', t3_r: 'Cargo, Empresa',
+    why_h: 'Por qué los equipos eligen SOLYN',
+    why_1_t: 'Una persona en tu campaña cada día hábil', why_1_d: 'Un humano real revisa y ajusta tu campaña cada día hábil.',
+    why_2_t: 'Lo aprendido con cada cliente, en la tuya', why_2_d: 'Enviamos [X]+ emails por mes entre todos los clientes y probamos decenas de herramientas. Cada mes, lo que mejor funciona entra automáticamente en tus campañas.',
+    why_3_t: 'Tus dominios, protegidos', why_3_d: 'Cada casilla envía entre 1 y 5 emails por día de forma aleatoria, con auto-reparación, hasta 6 variantes de copy por paso y 10 asuntos.',
+    how_h: 'Cómo funciona',
+    how_1_t: 'Hablá con Juan', how_1_d: 'Contale a quién le vendés.',
+    how_2_t: 'Lo construimos', how_2_d: 'Tu lista por cargo, tamaño de empresa y sector, el copy y las casillas protegidas.',
+    how_3_t: 'Llegan las respuestas', how_3_d: 'Respuestas positivas y reuniones, con un humano revisando tu campaña cada día hábil.',
+    more_h: 'De nuestros [X]+ clientes',
+    t4_q: '“Testimonio sobre el canal: el email sigue siendo uno de los canales más potentes para crecer, pero hacen falta <b>expertos de verdad</b> para que funcione. SOLYN es ese socio.”', t4_n: 'Nombre Apellido', t4_r: 'Cargo, Empresa',
+    t5_q: '“Testimonio comparativo: de todas las empresas de outreach con las que trabajamos, <b>SOLYN fue la mejor</b>. Resultados, transparencia, comunicación.”', t5_n: 'Nombre Apellido', t5_r: 'Cargo, Empresa',
+    t6_q: '“Testimonio sobre calidad: el equipo es <b>rápido, profesional</b> y entiende cómo llegar a la audiencia correcta.”', t6_n: 'Nombre Apellido', t6_r: 'Cargo, Empresa',
+    t7_q: '“Testimonio sobre consistencia: entregan <b>reuniones de calidad de forma constante</b>. Es un placer trabajar con todo el equipo.”', t7_n: 'Nombre Apellido', t7_r: 'Cargo, Empresa',
+    audit_label: 'La auditoría de lead gen', audit_h: '¿Ya trabajás con un proveedor?',
+    audit_sub: 'Hacele estas 6 preguntas. Trabajes con uno hoy o estés evaluando a uno nuevo, las respuestas dicen mucho.',
+    audit: [
+      ['¿Cada casilla envía entre 1 y 5 emails por día, variando a diario, con auto-reparación incluida?', '<b>Falla:</b> si no, están arriesgando tus dominios. Más de 5 por casilla por día, volumen fijo o sin auto-reparación pone en riesgo la entregabilidad.'],
+      ['¿Cuántas variantes de copy corren por paso en cada campaña?', '<b>Falla:</b> una sola variante no aprende. Sin varias versiones por paso no hay forma de saber qué mensaje convierte.'],
+      ['¿Mi tasa de rebote está por debajo del 1%?', '<b>Falla:</b> rebotes altos significan listas sin verificar, y cada rebote daña la reputación de tus dominios.'],
+      ['¿Calentaron cada casilla al menos 3 semanas antes de lanzar?', '<b>Falla:</b> una casilla nueva que envía de golpe termina en spam. El calentamiento no es opcional.'],
+      ['¿Ajustan el copy cada 48 horas según el rendimiento?', '<b>Falla:</b> un copy que no se toca durante semanas se degrada. Las campañas que funcionan se corrigen continuamente.'],
+      ['¿Un experto humano en copy revisa mi campaña todos los días?', '<b>Falla:</b> la automatización sin supervisión repite errores a escala. Alguien tiene que mirar la campaña cada día.'],
+    ],
+    audit_close_t: '¿Falló en alguna? Merecés algo mejor.', audit_close_d: 'No son detalles: son la base de un cold email que de verdad llega.', audit_cta: 'Pedí una auditoría de outbound gratis',
+    final_h: 'Tus próximas reuniones empiezan con una llamada.', final_sub: 'Contale a Juan a quién querés llegar. Te mostramos cómo lo alcanzaríamos.', final_cta: 'Agendar demo',
+    news_h: 'Suscribite a nuestro newsletter', news_ph: 'Email*',
+    made: 'Hecho con <span>♥</span> para líderes de marketing y ventas', footer_contact: 'Escribinos a info.solyn@gmail.com',
+    f_quick: 'Links rápidos', f_q1: 'Servicios', f_q2: 'Auditoría de proveedor', f_q3: 'Trabajá con nosotros',
+    f_start: 'Empezá', f_s1: 'Agendar demo', f_s2: 'Mirá el video',
+    copy: '© 2026 SOLYN. Todos los derechos reservados.',
+  },
+  en: {
+    nav_1: 'Solutions', nav_2: 'How it works', nav_3: 'Clients', nav_4: 'Audit', nav_cta: 'Book demo',
+    hero_chip: 'Done-for-you cold email', hero_h1: 'We turn email', hero_h2: 'into revenue',
+    hero_sub: 'Positive replies from the exact buyers you want, and meetings on your calendar week after week.',
+    hero_cta: 'Book demo', hero_video: 'Watch the 2-minute video ↓', hero_note: 'Tell Juan who you sell to. He\'ll show you how we\'d reach them.',
+    proof_1: '[X]+ meetings booked for clients', proof_2: '[X]+ customers', proof_3: 'Worked with [brand]',
+    proof_cap: 'Recognized as experts by the tools we use [placeholder]',
+    video_label: 'Watch: how SOLYN books meetings (1:31)', video_h: 'How we book meetings <span class="accent">for you</span>',
+    video_words: 'In our clients\' words · <span class="accent">[Company], [Company], [Company]</span> and more', video_or: 'or book with Juan directly:',
+    logos_h: 'Customers we\'ve landed for our clients',
+    logos: ['Brand 01', 'Brand 02', 'Brand 03', 'Brand 04', 'Brand 05', 'Brand 06', 'Brand 07', 'Brand 08'],
+    testi_label: 'What our clients say',
+    t1_q: '“Featured client testimonial: one short, concrete sentence about the result and the working relationship with SOLYN.”', t1_n: 'First Last', t1_r: 'Role, Company',
+    t2_q: '“Testimonial with a measurable result: <b>the very first month I met with [X] new opportunities</b>. The team checks in several times a month so nothing slips.”', t2_n: 'First Last', t2_r: 'Role, Company',
+    t3_q: '“Testimonial about the relationship: <b>every week we gain something strategic</b> working with the SOLYN team.”', t3_n: 'First Last', t3_r: 'Role, Company',
+    why_h: 'Why teams choose SOLYN',
+    why_1_t: 'A person on your campaign every business day', why_1_d: 'A real human reviews and adjusts your campaign each business day.',
+    why_2_t: 'Every client\'s lessons, in yours', why_2_d: 'We send [X]+ emails a month across clients and have tested dozens of tools. Each month, what works best goes into your campaigns automatically.',
+    why_3_t: 'Your domains, protected', why_3_d: 'Each inbox sends a randomized 1 to 5 emails a day with auto-healing, up to 6 copy variants per step and 10 subject lines.',
+    how_h: 'How it works',
+    how_1_t: 'Talk to Juan', how_1_d: 'Tell him who you sell to.',
+    how_2_t: 'We build it', how_2_d: 'Your list by title, company size and industry, the copy, and protected inboxes.',
+    how_3_t: 'Replies come in', how_3_d: 'Positive replies and meetings, with a human reviewing your campaign every business day.',
+    more_h: 'From our [X]+ customers',
+    t4_q: '“Testimonial about the channel: email is still one of the most powerful channels to grow, but you need <b>real experts</b> to make it work. SOLYN is that partner.”', t4_n: 'First Last', t4_r: 'Role, Company',
+    t5_q: '“Comparative testimonial: of all the outreach companies we tried, <b>SOLYN has been the best</b>. Results, transparency, communication.”', t5_n: 'First Last', t5_r: 'Role, Company',
+    t6_q: '“Testimonial about quality: the team is <b>responsive, professional</b> and understands how to reach the right audience.”', t6_n: 'First Last', t6_r: 'Role, Company',
+    t7_q: '“Testimonial about consistency: they deliver <b>high-quality appointments consistently</b>. A pleasure to work with the whole team.”', t7_n: 'First Last', t7_r: 'Role, Company',
+    audit_label: 'The lead gen audit', audit_h: 'Already working with a vendor?',
+    audit_sub: 'Ask your lead gen vendor these 6 questions. Whether you work with one today or you\'re vetting a new one, the answers tell you a lot.',
+    audit: [
+      ['Does each inbox send a randomized 1 to 5 emails a day, varied daily, with auto-healing built in?', '<b>Fail:</b> if not, they\'re risking your domains. More than 5 per inbox per day, fixed daily volume, or no auto-healing puts deliverability at risk.'],
+      ['How many copy variants do you run per step in each campaign?', '<b>Fail:</b> a single variant never learns. Without several versions per step there is no way to know which message converts.'],
+      ['Is my bounce rate below 1%?', '<b>Fail:</b> high bounces mean unverified lists, and every bounce hurts your domain reputation.'],
+      ['Did you warm up every inbox for at least 3 weeks before launch?', '<b>Fail:</b> a new inbox that sends at full volume lands in spam. Warm-up is not optional.'],
+      ['Do you adjust the copy every 48 hours based on performance?', '<b>Fail:</b> copy left untouched for weeks decays. Campaigns that work get corrected continuously.'],
+      ['Does a human copy expert review my campaign every day?', '<b>Fail:</b> unsupervised automation repeats mistakes at scale. Someone has to look at the campaign every day.'],
+    ],
+    audit_close_t: 'Failed even one? You deserve better.', audit_close_d: 'These aren\'t nice-to-haves: they\'re the baseline for cold email that actually lands.', audit_cta: 'Get a free outbound audit',
+    final_h: 'Your next meetings start with one call.', final_sub: 'Tell Juan who you want to reach. We\'ll show you how we\'d reach them.', final_cta: 'Book demo',
+    news_h: 'Subscribe to our newsletter', news_ph: 'Email*',
+    made: 'Made with <span>♥</span> for marketing and sales leaders', footer_contact: 'Write to us at info.solyn@gmail.com',
+    f_quick: 'Quick links', f_q1: 'Services', f_q2: 'Vendor audit', f_q3: 'Work with us',
+    f_start: 'Get started', f_s1: 'Book demo', f_s2: 'Watch the video',
+    copy: '© 2026 SOLYN. All rights reserved.',
+  },
+};
+function detectLang() {
+  try { const s = localStorage.getItem('solyn_lang'); if (s === 'en' || s === 'es') return s; } catch (e) {}
+  try { const l = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']); if (l.some(x => String(x).toLowerCase().startsWith('es'))) return 'es'; } catch (e) {}
+  return 'en';
+}
+let lang = detectLang();
+function apply() {
+  const d = I18N[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i]').forEach(el => { el.innerHTML = d[el.dataset.i] ?? el.dataset.i; });
+  document.querySelectorAll('[data-ph-i]').forEach(el => { el.placeholder = d[el.dataset.phI]; });
+  document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === lang));
+  document.getElementById('logotrack').innerHTML = [...d.logos, ...d.logos].map(x => `<span>${x}</span>`).join('');
+  document.getElementById('acc').innerHTML = d.audit.map((it, i) => `<div class="it${i === 0 ? ' open' : ''}"><button aria-expanded="${i === 0}"><span class="n">0${i + 1}</span><span>${it[0]}</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="a"><p>${it[1]}</p></div></div>`).join('');
+  document.querySelectorAll('#acc button').forEach(b => b.addEventListener('click', () => { const it = b.parentElement; const open = it.classList.contains('open'); document.querySelectorAll('#acc .it').forEach(x => { x.classList.remove('open'); x.querySelector('button').setAttribute('aria-expanded', 'false'); }); if (!open) { it.classList.add('open'); b.setAttribute('aria-expanded', 'true'); } }));
+  document.title = lang === 'es' ? 'SOLYN | Convertimos el email en ingresos' : 'SOLYN | We turn email into revenue';
+  // video source per language
+  const v = document.getElementById('player'); const vc = document.getElementById('vcard');
+  vc.classList.remove('playing'); v.pause(); v.removeAttribute('src'); v.load(); v.dataset.src = `video/solyn-${lang}.mp4`; v.poster = `video/solyn-${lang}-poster.jpg`;
+}
+document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => { lang = b.dataset.lang; try { localStorage.setItem('solyn_lang', lang); } catch (e) {} apply(); }));
+apply();
+// video
+document.getElementById('cover').addEventListener('click', () => { const v = document.getElementById('player'); document.getElementById('vcard').classList.add('playing'); v.src = v.dataset.src; v.muted = false; v.play().catch(() => {}); });
+document.getElementById('player').addEventListener('ended', () => { document.getElementById('vcard').classList.remove('playing'); });
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+// newsletter (sin backend por ahora: abre el correo con el email cargado)
+document.getElementById('newsform').addEventListener('submit', e => { e.preventDefault(); const m = document.getElementById('newsmail').value; location.href = `mailto:info.solyn@gmail.com?subject=${encodeURIComponent('Newsletter SOLYN')}&body=${encodeURIComponent((lang === 'es' ? 'Quiero suscribirme al newsletter: ' : 'Please subscribe me to the newsletter: ') + m)}`; });
 </script>
 </body>
 </html>
