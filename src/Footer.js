@@ -153,7 +153,9 @@ function Footer() {
   }, /*#__PURE__*/React.createElement("div", {
     style: s.colLabel
   }, t('footer_contact_label')), /*#__PURE__*/React.createElement("a", {
-    href: "mailto:info.solyn@gmail.com",
+    href: "https://calendly.com/info-solyn/30min",
+    target: "_blank",
+    rel: "noopener",
     style: s.link,
     onMouseEnter: onEnter,
     onMouseLeave: onLeave
