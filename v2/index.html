@@ -2,25 +2,338 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SOLYN — v2 (en construcción)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SOLYN — Reuniones calificadas en tu calendario</title>
+<meta name="description" content="Captación de clientes B2B por resultados. Identificamos, contactamos y calificamos a tus clientes ideales, y te los agendamos. No pagás nada hasta que entregamos.">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#F5F1EA">
+<meta property="og:title" content="SOLYN — Reuniones calificadas en tu calendario">
+<meta property="og:description" content="Captación de clientes B2B por resultados. No pagás nada hasta que entregamos reuniones calificadas.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="video/solyn-es-poster.jpg">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<style>/* latin-ext */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/bebas-neue-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/bebas-neue-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/dm-mono-300-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/dm-mono-300-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/dm-mono-400-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/dm-mono-400-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/dm-mono-500-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/dm-mono-500-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/syne-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/syne-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/syne-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/syne-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/syne-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/syne-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/syne-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/syne-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/syne-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/syne-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/syne-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/syne-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("fonts/syne-greek.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("fonts/syne-latin-ext.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("fonts/syne-latin.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>/* SOLYN — Light mode tokens. Anaranjado SOLYN como acento, dark inversa para Guarantee. */
+:root {
+  --bg-primary: #F5F1EA;        /* cream base — saca lo naranja del logo */
+  --surface-1: #ECE6DB;
+  --surface-2: #E2DACB;
+  --border: #1A1715;
+  --border-soft: rgba(26,23,21,0.12);
+
+  --text-primary: #1A1715;
+  --text-secondary: #5C544C;
+  --text-muted: #8C8278;
+
+  --accent: #F26B1F;            /* naranja SOLYN principal */
+  --accent-hot: #FF8A1F;        /* highlight más cálido */
+  --accent-deep: #C44A0F;       /* sombra del sol */
+
+  /* Inverso para sección Guarantee */
+  --bg-inverse: #1A1715;
+  --text-inverse: #F5F1EA;
+
+  --font-display: 'Bebas Neue', Impact, sans-serif;
+  --font-body: 'Syne', 'Helvetica Neue', sans-serif;
+  --font-mono: 'DM Mono', 'Courier New', monospace;
+}
+</style>
 <style>
-  :root { --bg: #F5F1EA; --fg: #1A1715; --accent: #F26B1F; --muted: #8C8278; }
-  html, body { margin: 0; background: var(--bg); color: var(--fg); font-family: 'Syne', 'Helvetica Neue', Arial, sans-serif; }
-  main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 24px; gap: 18px; }
-  .sun { width: 72px; height: 72px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFB347 0%, #F26B1F 60%, #C44A0F 100%); }
-  h1 { font-family: Impact, 'Bebas Neue', sans-serif; font-size: clamp(48px, 9vw, 96px); letter-spacing: 1px; margin: 0; line-height: 0.95; text-transform: uppercase; }
-  h1 span { color: var(--accent); }
-  p { max-width: 520px; color: var(--muted); font-size: 17px; line-height: 1.6; margin: 0; }
-  a { color: var(--fg); }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg-primary); color: var(--text-primary); font-family: var(--font-body); font-weight: 300; font-size: 17px; line-height: 1.8; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html { overflow-x: hidden; padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px); }
+body { overflow-x: clip; padding: 0; }
+img { max-width: none; }
+::selection { background: var(--accent); color: #F5F1EA; }
+a { color: inherit; text-decoration: none; }
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity 850ms cubic-bezier(.16,1,.3,1), transform 850ms cubic-bezier(.16,1,.3,1); }
+.reveal.in { opacity: 1; transform: none; }
+@media (max-width: 900px) {
+  .nav-links { display: none !important; }
+  .sphere-wrap { width: 210px !important; height: 210px !important; top: 36px !important; right: -50px !important; opacity: 0.6; }
+  .cta-col { align-items: flex-start !important; flex-shrink: 1 !important; min-width: 0; max-width: 100%; }
+  .cta-note { text-align: left !important; }
+  .cta-row { flex-wrap: wrap !important; }
+  .grid-3, .grid-2, .proof-grid { grid-template-columns: 1fr !important; }
+  .acc-a { padding-left: 24px !important; }
+  section { padding-left: 24px !important; padding-right: 24px !important; }
+  nav { padding-left: 20px !important; padding-right: 20px !important; }
+}
+@media (max-width: 600px) {
+  .proof-grid { grid-template-columns: 1fr 1fr !important; }
+}
 </style>
 </head>
 <body>
-<main>
-  <div class="sun"></div>
-  <h1>SOLYN <span>v2</span></h1>
-  <p>Nueva versión del sitio, en construcción. La versión actual sigue publicada en <a href="../">infosolyn-afk.github.io</a>.</p>
-</main>
+<div id="app"></div>
+<script>window.__resources = { solynLogo: 'assets/solyn-logo.png', solynLogoLight: 'assets/solyn-logo-light.png' };</script>
+<script src="vendor/three.min.js?v=202611030128"></script>
+<script src="vendor/gsap.min.js?v=202611030128"></script>
+<script src="vendor/ScrollTrigger.min.js?v=202611030128"></script>
+<script src="vendor/split-type.min.js?v=202611030128"></script>
+<script src="vendor/lenis.min.js?v=202611030128"></script>
+<script src="vendor/react.development.js?v=202611030128"></script>
+<script src="vendor/react-dom.development.js?v=202611030128"></script>
+<script src="src/motion.js?v=202611030128"></script>
+<script src="src/i18n.js?v=202611030128"></script>
+<script src="src/Loader.js?v=202611030128"></script>
+<script src="src/HeroSphere.js?v=202611030128"></script>
+<script src="src/Nav.js?v=202611030128"></script>
+<script src="src/Hero.js?v=202611030128"></script>
+<script src="src/Marquee.js?v=202611030128"></script>
+<script src="src/VideoSection.js?v=202611030128"></script>
+<script src="src/Sections.js?v=202611030128"></script>
+<script src="src/Guarantee.js?v=202611030128"></script>
+<script src="src/Footer.js?v=202611030128"></script>
+<script>
+(function () {
+  function boot() {
+    "use strict";
+    
+    function App() {
+      React.useEffect(function () {
+        SOLYN_MOTION.init();
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) e.target.classList.add('in');
+          });
+        }, {
+          threshold: 0.12
+        });
+        document.querySelectorAll('.reveal').forEach(function (el) {
+          return io.observe(el);
+        });
+        return function () {
+          return io.disconnect();
+        };
+      }, []);
+      return /*#__PURE__*/React.createElement(SolynLangProvider, null, /*#__PURE__*/React.createElement(Loader, null), /*#__PURE__*/React.createElement(Nav, null), /*#__PURE__*/React.createElement("main", null, /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(Marquee, null), /*#__PURE__*/React.createElement(VideoSection, null), /*#__PURE__*/React.createElement("div", {
+        className: "reveal"
+      }, /*#__PURE__*/React.createElement(HowItWorks, null)), /*#__PURE__*/React.createElement("div", {
+        className: "reveal"
+      }, /*#__PURE__*/React.createElement(Why, null)), /*#__PURE__*/React.createElement("div", {
+        id: "guarantee",
+        className: "reveal"
+      }, /*#__PURE__*/React.createElement(Guarantee, null)), /*#__PURE__*/React.createElement("div", {
+        className: "reveal"
+      }, /*#__PURE__*/React.createElement(Audit, null)), /*#__PURE__*/React.createElement("div", {
+        className: "reveal"
+      }, /*#__PURE__*/React.createElement(FAQ, null)), /*#__PURE__*/React.createElement("div", {
+        className: "reveal"
+      }, /*#__PURE__*/React.createElement(CTA, null))), /*#__PURE__*/React.createElement(Footer, null));
+    }
+    ReactDOM.createRoot(document.getElementById('app')).render(/*#__PURE__*/React.createElement(App, null));
+  }
+  if (document.readyState === 'complete') boot(); else window.addEventListener('load', boot);
+})();
+</script>
 </body>
 </html>
