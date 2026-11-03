@@ -248,7 +248,36 @@ footer .lang { color: rgba(245,241,234,0.55); } footer .lang button:hover { colo
   .acc button { grid-template-columns: 32px 1fr 20px; padding: 20px 12px; } .acc button .q { font-size: 17px; } .acc .a p { padding: 0 12px 22px 12px; } .acc .it.open .a { max-height: 420px; }
   .audit .close { padding: 32px 24px; }
 }
-@media (max-width: 600px) { .proof { grid-template-columns: 1fr; } .proof div { padding: 14px 18px; } .news input { font-size: 16px; } }
+@media (max-width: 600px) {
+  /* Celular: más aire y textos un punto más grandes */
+  .container { padding-left: 22px; padding-right: 22px; }
+  section { padding: 84px 0; }
+  .label { font-size: 12px; letter-spacing: 2.5px; }
+  .hero { padding-top: 96px; padding-bottom: 44px; }
+  .hero .ghost { top: 14%; }
+  .chip { font-size: 10.5px; letter-spacing: 2px; padding: 9px 14px; margin-bottom: 26px; }
+  .hero h1 { font-size: clamp(58px, 16.5vw, 72px); }
+  .hero .bottom { margin-top: 34px; padding-top: 32px; gap: 28px; }
+  .hero .body { font-size: 17px; }
+  .hero .ctarow { gap: 18px; }
+  .hero .note { font-size: 12px; line-height: 1.6; }
+  .proof { grid-template-columns: 1fr; margin-top: 40px; } .proof div { padding: 15px 18px; font-size: 15px; }
+  .marquee { padding: 18px 0; }
+  .vsl { padding: 84px 0 76px; } .vsl .label { margin-bottom: 24px; line-height: 1.7; }
+  .vcard { border-radius: 14px; }
+  .vcard .cover img { display: none; } .vcard .cover h3 { font-size: 28px; padding: 0 18px; } .play { width: 60px; height: 60px; }
+  .vsl .or { flex-direction: column; gap: 6px; line-height: 1.6; } .vsl .or > span:not([data-i]) { display: none; } .vsl .or > span[data-i] { margin-top: 10px; } .vsl .or > span[data-i]:first-child { margin-top: 0; }
+  .featured blockquote { font-size: 20px; line-height: 1.5; text-align: left; }
+  .featured .person { justify-content: flex-start; }
+  .card { padding: 30px 24px; border-radius: 14px; }
+  .tcard p { font-size: 16.5px; }
+  h2.big { font-size: clamp(50px, 14.5vw, 64px); }
+  .acc button { grid-template-columns: 30px 1fr 22px; padding: 22px 10px; gap: 10px; } .acc button .q { font-size: 16.5px; line-height: 1.4; } .acc .a p { font-size: 15px; padding: 0 10px 22px 40px; }
+  .final { padding: 120px 0; } .final .btn { margin-top: 36px; }
+  .news form { flex-direction: column; max-width: none; } .news input { flex: none; width: 100%; font-size: 16px; height: 50px; } .news button { height: 50px; }
+  .fcols { padding: 48px 0; gap: 32px; } .fcols ul { gap: 12px; }
+  .fbottom { padding-top: 24px; gap: 14px 24px; }
+}
 
 /* lead magnet (popup + botón flotante) */
 .lm { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; pointer-events: none; transition: opacity 350ms cubic-bezier(.16,1,.3,1); }
